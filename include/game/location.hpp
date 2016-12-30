@@ -22,6 +22,27 @@ class Location
 public:
     explicit Location();
     virtual ~Location();
+
+    UString Name() const;
+    void setName(const UString &Name);
+
+    std::vector<Place> Seats() const;
+    void setSeats(const std::vector<Place> &Seats);
+
+    r64 DayCost() const;
+    void setDayCost(const r64 &DayCost);
+
+    u32 MinRank() const;
+    void setMinRank(const u32 &MinRank);
+
+    r64 FlyCost() const;
+    void setFlyCost(const r64 &FlyCost);
+
+    r64 TrainCost() const;
+    void setTrainCost(const r64 &TrainCost);
+
+    r64 HouseCost() const;
+    void setHouseCost(const r64 &HouseCost);
 };
 
 } // namespace game

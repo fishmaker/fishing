@@ -14,6 +14,9 @@ class Fish : public IBasicCatch
 public:
     Fish();
     ~Fish();
+
+    catchclass_e CatchClass() const;
+    void setCatchClass(const catchclass_e &CatchClass);
 };
 
 } // namespace game

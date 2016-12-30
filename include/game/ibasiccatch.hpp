@@ -26,7 +26,36 @@ public:
     // TODO: Конструктор всяго
     virtual ~IBasicCatch();
 
-    // TODO: get/set or Builder
+
+    UString Name() const;
+    void setName(const UString &Name);
+
+    UString Description() const;
+    void setDescription(const UString &Description);
+
+    QString ImagePath() const;
+    void setImagePath(const QString &ImagePath);
+
+    catchtype_e FishType() const;
+    void setFishType(const catchtype_e &FishType);
+
+    r64 Weight() const;
+    void setWeight(const r64 &Weight);
+
+    r64 Price() const;
+    void setPrice(const r64 &Price);
+
+    i32 Expirience() const;
+    void setExpirience(const i32 &Expirience);
+
+    i32 Depth() const;
+    void setDepth(const i32 &Depth);
+
+    UString PlaceName() const;
+    void setPlaceName(const UString &PlaceName);
+
+    UString BaitName() const;
+    void setBaitName(const UString &BaitName);
 };
 
 } // namespace game

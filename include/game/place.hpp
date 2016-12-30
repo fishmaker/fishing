@@ -29,6 +29,18 @@ private:
 public:
     explicit Place();
     virtual ~Place();
+
+    QImage BGImage() const;
+    void setBGImage(const QImage &BGImage);
+
+    std::vector<fishplaceinfo_t> Fishes() const;
+    void setFishes(const std::vector<fishplaceinfo_t> &Fishes);
+
+    UString Description() const;
+    void setDescription(const UString &Description);
+
+    UString Name() const;
+    void setName(const UString &Name);
 };
 
 } // namespace game

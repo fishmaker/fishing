@@ -17,6 +17,15 @@ class GameEngine
 public:
     explicit GameEngine();
     ~GameEngine();
+
+    IFormBase::formname_e CurrentForm() const;
+    void setCurrentForm(const IFormBase::formname_e &CurrentForm);
+
+    Location CurrentLocation() const;
+    void setCurrentLocation(const Location &CurrentLocation);
+
+    Place Place() const;
+    void setPlace(const Place &Place);
 };
 
 } // namespace game
