@@ -18,7 +18,9 @@ SOURCES += main.cpp \
     src/gameengine.cpp \
     src/iformbase.cpp \
     src/welcomeview.cpp \
-    src/fishdatabase.cpp
+    src/fishdatabase.cpp \
+    src/ibasiccatch.cpp \
+    src/fish.cpp
 
 HEADERS  += \
     include/game/fishspeed.hpp \
@@ -29,12 +31,14 @@ HEADERS  += \
     include/game/fishsizes.hpp \
     include/game/fishfrequency.hpp \
     include/game/fishstructs.hpp \
-    include/game/fishtypes.hpp \
     include/game/gameengine.hpp \
     include/game/globalsettings.hpp \
     include/game/tables.hpp \
     include/game/iformbase.hpp \
-    include/game/View/welcomeview.hpp
+    include/game/View/welcomeview.hpp \
+    include/game/ibasiccatch.hpp \
+    include/game/catchtypes.hpp \
+    include/game/fish.h
 
 INCLUDEPATH += include
 

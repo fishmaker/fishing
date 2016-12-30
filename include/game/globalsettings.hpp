@@ -16,6 +16,18 @@ static const i32 WINDOW_HEIGHT = 550;
 // Геометрия окна
 static const QRect WINDOW_RECT = QRect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
 
+
+typedef enum : i32 {
+    DM_1055,        // 1000 x 550
+} dimension_t;
+
+typedef struct {
+    dimension_t     dimensions;
+    bool            sound_bg;
+    bool            sound_fg;
+    i32             sound_level;
+} settings_t;
+
 } // namespace game
 
 #endif // GLOBALSETTINGS_H

@@ -16,13 +16,13 @@ struct table{
 };
 
 // Таблица 2х8 Наживка(ID) <-> Процент улова
-typedef struct table<game::i32, game::r64> tableBaitCatch_t;
+typedef struct table<i32, r64> tableBaitCatch_t;
 
 // Таблица 2х8 Время ловка <-> Активность
-typedef struct table<game::daytimes_t, game::r64> tableTimeActivity_t;
+typedef struct table<daytimes_t, r64> tableTimeActivity_t;
 
 // Таблица 2х5 Глубина <-> Размер
-typedef struct table<game::i32, game::fishsizes_t> tableDepthSize_t;
+typedef struct table<i32, fishsizes_t> tableDepthSize_t;
 
 } // namespace game
 

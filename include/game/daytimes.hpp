@@ -1,9 +1,11 @@
 #ifndef DAYTIMES_HPP
 #define DAYTIMES_HPP
 
+#include "game/common.hpp"
+
 namespace game {
 
-typedef enum {
+typedef enum : i32 {
     DT_TIME00 = 0,      // 00:00
     DT_TIME03,          // 03:00
     DT_TIME06,          // 06:00

@@ -1,4 +1,4 @@
-#include "include/game/fishdatabase.hpp"
+#include "game/fishdatabase.hpp"
 
 FishDatabase::FishDatabase()
 {

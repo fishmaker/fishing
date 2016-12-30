@@ -6,7 +6,7 @@
 #include <QtCore>
 
 #include "game/common.hpp"
-#include "game/fishtypes.hpp"
+#include "game/catchtypes.hpp"
 #include "game/tables.hpp"
 #include "game/fishspeed.hpp"
 #include "game/fishfrequency.hpp"
@@ -19,7 +19,7 @@ typedef struct {
     QString             name;           // имя: Плотва
     QString             description;    // описание: Питается ...
     QString             image_path;     // путь к картинке: ":/fishes/111.png"
-    fishtype_t          fish_type;      // тип рассматриваемой рыбы
+    catchtype_t         fish_type;      // размерность добычи
     r64                 min_weight;     // минимальный вес: 1.232 - 1кг 232г
     r64                 max_weight;     // максимальный вес
     r64                 price;          // стоимость за 1г
@@ -30,20 +30,6 @@ typedef struct {
     fishspeed_t         fish_speed;     // скорость рыбы
     fishfrequency_t     frequency;      // активность рыбы
 } fishDBrecord_t;
-
-// Информация о добыче для хранения у игрока
-typedef struct {
-    QString             name;           // имя: Плотва
-    QString             description;    // описание: Питается ...
-    QString             image_path;     // путь к картинке: ":/fishes/111.png"
-    fishtype_t          fish_type;      // тип рассматриваемой рыбы
-    r64                 weight;         // вес рыбы
-    r64                 price;          // стоимость за 1г
-    i32                 expirience;     // сколько приносит опыта за 1г
-    i32                 depth;          // глубина
-    QString             place_name;     // названия места
-    QString             bait_name;      // название наживки
-} fishsmallinfo_t;
 
 // Информация для хранения информации о рыбе на конкретных местах ловли
 typedef struct {

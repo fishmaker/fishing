@@ -8,12 +8,12 @@
 
 class FishDatabase
 {
+    std::map<game::i32, game::fishDBrecord_t> m_FishDatabase;
+
 public:
     explicit FishDatabase();
     virtual ~FishDatabase();
 
-private:
-    std::map<game::i32, game::fishDBrecord_t> m_FishDatabase;
 };
 
 #endif // FISHDATABASE_H

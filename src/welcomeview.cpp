@@ -1,4 +1,4 @@
-#include "include/game/View/welcomeview.hpp"
+#include "game/View/welcomeview.hpp"
 #include "ui_welcomeview.h"
 
 WelcomeView::WelcomeView(QWidget *parent) :
@@ -11,4 +11,14 @@ WelcomeView::WelcomeView(QWidget *parent) :
 WelcomeView::~WelcomeView()
 {
     delete ui;
+}
+
+void WelcomeView::Startup()
+{
+
+}
+
+void WelcomeView::Endup()
+{
+
 }

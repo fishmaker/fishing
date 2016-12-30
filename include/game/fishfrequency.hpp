@@ -5,7 +5,7 @@
 
 namespace game {
 
-typedef enum {
+typedef enum : i32 {
     FF_VERYFAST     = 0,
     FF_FAST,
     FF_NORMAL,
@@ -15,7 +15,7 @@ typedef enum {
 } fishfrequency_t;
 
 // Частота обновления движений (мс)
-static const game::i32 fish_freqs[] = {
+static const i32 fish_freqs[] = {
     15,
     50,
     100,
