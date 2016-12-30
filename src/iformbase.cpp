@@ -1,11 +1,11 @@
 #include "game/iformbase.hpp"
 
-IFormBase::IFormBase()
+game::IFormBase::IFormBase()
 {
 
 }
 
-IFormBase::~IFormBase()
+game::IFormBase::~IFormBase()
 {
 
 }

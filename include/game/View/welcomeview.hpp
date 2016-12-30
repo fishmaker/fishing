@@ -9,7 +9,7 @@ namespace Ui {
 class WelcomeView;
 }
 
-class WelcomeView : public QWidget, public IFormBase
+class WelcomeView : public QWidget, public game::IFormBase
 {
     Q_OBJECT
 

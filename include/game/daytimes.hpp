@@ -14,7 +14,7 @@ typedef enum : i32 {
     DT_TIME15,          // 15:00
     DT_TIME18,          // 18:00
     DT_TIME21,          // 21:00
-} daytimes_t;
+} daytimes_e;
 
 } // namespace game
 

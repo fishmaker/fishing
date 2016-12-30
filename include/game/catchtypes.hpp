@@ -15,7 +15,7 @@ typedef enum : i32 {
     CT_MUTANT       = 0b00010000, // мутант     [300% .. 500%]
     CT_MONSTER      = 0b00100000, // монстр     [500% .. 1000%]
     CT_ANOMALY      = 0b01000000, // аномалия   [1000% .. 2000%]
-} catchtype_t;
+} catchtype_e;
 
 typedef enum : i32 {
     CC_FISH         = 0,    // рыба
@@ -30,7 +30,7 @@ typedef enum : i32 {
     CC_IRON,                // железо
     CC_LOG,                 // бревно
     CC_DECK,                // колода
-} catchclass_t;
+} catchclass_e;
 
 constexpr static const
 std::pair<i32, r64> s_fish_sizes[] = {

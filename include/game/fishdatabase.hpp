@@ -6,14 +6,18 @@
 #include "game/common.hpp"
 #include "game/fishstructs.hpp"
 
+namespace game {
+
 class FishDatabase
 {
-    std::map<game::i32, game::fishDBrecord_t> m_FishDatabase;
+    std::map<i32, fishDBrecord_t> m_FishDatabase;
 
 public:
     explicit FishDatabase();
     virtual ~FishDatabase();
 
 };
+
+} // namespace game
 
 #endif // FISHDATABASE_H

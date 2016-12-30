@@ -1,11 +1,11 @@
 #include "game/gameengine.hpp"
 
-GameEngine::GameEngine()
+game::GameEngine::GameEngine()
 {
 
 }
 
-GameEngine::~GameEngine()
+game::GameEngine::~GameEngine()
 {
 
 }

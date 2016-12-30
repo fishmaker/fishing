@@ -20,7 +20,15 @@ SOURCES += main.cpp \
     src/welcomeview.cpp \
     src/fishdatabase.cpp \
     src/ibasiccatch.cpp \
-    src/fish.cpp
+    src/fish.cpp \
+    src/gameworld.cpp \
+    src/location.cpp \
+    src/place.cpp \
+    src/player.cpp \
+    src/bag.cpp \
+    src/welcomemodel.cpp \
+    src/welcomecontroller.cpp \
+    src/playerstats.cpp
 
 HEADERS  += \
     include/game/fishspeed.hpp \
@@ -38,7 +46,15 @@ HEADERS  += \
     include/game/View/welcomeview.hpp \
     include/game/ibasiccatch.hpp \
     include/game/catchtypes.hpp \
-    include/game/fish.h
+    include/game/fish.h \
+    include/game/gameworld.hpp \
+    include/game/location.hpp \
+    include/game/place.hpp \
+    include/game/player.hpp \
+    include/game/bag.hpp \
+    include/game/Model/welcomemodel.hpp \
+    include/game/Controller/welcomecontroller.hpp \
+    include/game/playerstats.hpp
 
 INCLUDEPATH += include
 

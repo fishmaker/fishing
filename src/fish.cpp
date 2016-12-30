@@ -1,4 +1,4 @@
-#include "include/game/fish.h"
+#include "game/fish.h"
 
 game::Fish::Fish()
 {

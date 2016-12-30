@@ -9,7 +9,7 @@ typedef enum : i32 {
     FS_SMALL        = 0,    // малек
     FS_NORMAL,              // средняя
     FS_BIG,                 // крупная
-} fishsizes_t;
+} fishsizes_e;
 
 } // namespace game
 

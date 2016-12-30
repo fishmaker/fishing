@@ -16,10 +16,10 @@ namespace game {
 // Информация для базы данных
 // ID назначит база данных
 typedef struct {
-    QString             name;           // имя: Плотва
-    QString             description;    // описание: Питается ...
+    UString             name;           // имя: Плотва
+    UString             description;    // описание: Питается ...
     QString             image_path;     // путь к картинке: ":/fishes/111.png"
-    catchtype_t         fish_type;      // размерность добычи
+    catchtype_e         fish_type;      // размерность добычи
     r64                 min_weight;     // минимальный вес: 1.232 - 1кг 232г
     r64                 max_weight;     // максимальный вес
     r64                 price;          // стоимость за 1г
@@ -27,15 +27,14 @@ typedef struct {
     tableDepthSize_t    depth_size;     // таблица глубина - размер
     tableTimeActivity_t time_activity;  // таблица время - активность
     tableBaitCatch_t    bait_catch;     // таблица наживка - улов
-    fishspeed_t         fish_speed;     // скорость рыбы
-    fishfrequency_t     frequency;      // активность рыбы
+    fishspeed_e         fish_speed;     // скорость рыбы
+    fishfrequency_e     frequency;      // активность рыбы
 } fishDBrecord_t;
 
 // Информация для хранения информации о рыбе на конкретных местах ловли
 typedef struct {
     i32                 ID;
     i32                 count;
-    std::vector<i32>    zones;
 } fishplaceinfo_t;
 
 } // namespace game

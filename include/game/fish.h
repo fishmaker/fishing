@@ -9,7 +9,7 @@ namespace game {
 
 class Fish : public IBasicCatch
 {
-    catchclass_t    m_CatchClass;
+    catchclass_e    m_CatchClass;
 
 public:
     Fish();

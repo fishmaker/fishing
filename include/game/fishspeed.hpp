@@ -12,7 +12,7 @@ typedef enum : i32 {
     FS_FAST,                // быстрая
     FS_VERYFAST,            // очень быстрая
     FS_FASTEST,
-} fishspeed_t;
+} fishspeed_e;
 
 static const r64 speed_rates[] = {
     /* [FS_VERYSLOW] */     0.25,

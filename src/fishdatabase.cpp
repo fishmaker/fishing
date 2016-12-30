@@ -1,11 +1,11 @@
 #include "game/fishdatabase.hpp"
 
-FishDatabase::FishDatabase()
+game::FishDatabase::FishDatabase()
 {
 
 }
 
-FishDatabase::~FishDatabase()
+game::FishDatabase::~FishDatabase()
 {
 
 }

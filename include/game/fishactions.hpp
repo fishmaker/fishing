@@ -15,7 +15,7 @@ typedef enum : i32 {
     AC_CANNED   = 0b01000000, // сделать консервы
     AC_EAR      = 0b10000000, // сделать уху
     AC_BAG      = 0b0000000100000000,   // перекинуть в рюкзак
-} actions_t;
+} actions_e;
 
 } // namespace game
 

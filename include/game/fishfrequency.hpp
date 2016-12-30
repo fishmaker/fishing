@@ -12,7 +12,7 @@ typedef enum : i32 {
     FF_SLOW,
     FF_VERYSLOW,
     FF_SLOWEST
-} fishfrequency_t;
+} fishfrequency_e;
 
 // Частота обновления движений (мс)
 static const i32 fish_freqs[] = {

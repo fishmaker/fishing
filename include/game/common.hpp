@@ -1,6 +1,8 @@
 #ifndef COMMON_H
 #define COMMON_H
 
+#include <string>
+
 namespace game {
 
 typedef unsigned char           u8;
@@ -16,6 +18,9 @@ typedef signed long long int  	i64;
 typedef float                   r32;
 typedef double                  r64;
 typedef long double             r80;
+
+using LString                   = std::string;
+using UString                   = std::wstring;
 
 } // namespace game
 
