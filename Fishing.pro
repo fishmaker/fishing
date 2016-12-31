@@ -36,7 +36,14 @@ SOURCES += main.cpp \
     src/travelview.cpp \
     src/fishingview.cpp \
     src/ifishingrod.cpp \
-    src/igameitem.cpp
+    src/igameitem.cpp \
+    src/suitcase.cpp \
+    src/gameexception.cpp \
+    src/fatalexception.cpp \
+    src/badchoiceexception.cpp \
+    src/notenoughexception.cpp \
+    src/incorrectexception.cpp \
+    src/notselectedexception.cpp
 
 HEADERS  += \
     include/game/fishspeed.hpp \
@@ -70,7 +77,14 @@ HEADERS  += \
     include/game/View/fishingview.hpp \
     include/game/fish.hpp \
     include/game/ifishingrod.hpp \
-    include/game/igameitem.hpp
+    include/game/igameitem.hpp \
+    include/game/suitcase.hpp \
+    include/game/Exceptions/gameexception.hpp \
+    include/game/Exceptions/fatalexception.hpp \
+    include/game/Exceptions/badchoiceexception.hpp \
+    include/game/Exceptions/notenoughexception.hpp \
+    include/game/Exceptions/incorrectexception.hpp \
+    include/game/Exceptions/notselectedexception.hpp
 
 INCLUDEPATH += include
 
