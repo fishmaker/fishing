@@ -1,11 +1,11 @@
-#include "game/fish.h"
+#include "game/fish.hpp"
 
-catchclass_e Fish::CatchClass() const
+game::catchclass_e game::Fish::CatchClass() const
 {
     return m_CatchClass;
 }
 
-void Fish::setCatchClass(const catchclass_e &CatchClass)
+void game::Fish::setCatchClass(const game::catchclass_e &CatchClass)
 {
     m_CatchClass = CatchClass;
 }

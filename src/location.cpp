@@ -1,71 +1,71 @@
 #include "game/location.hpp"
 
-UString Location::Name() const
+game::UString game::Location::Name() const
 {
     return m_Name;
 }
 
-void Location::setName(const UString &Name)
+void game::Location::setName(const game::UString &Name)
 {
     m_Name = Name;
 }
 
-std::vector<Place> Location::Seats() const
+std::vector<game::Place> game::Location::Seats() const
 {
     return m_Seats;
 }
 
-void Location::setSeats(const std::vector<Place> &Seats)
+void game::Location::setSeats(const std::vector<game::Place> &Seats)
 {
     m_Seats = Seats;
 }
 
-r64 Location::DayCost() const
+game::r64 game::Location::DayCost() const
 {
     return m_DayCost;
 }
 
-void Location::setDayCost(const r64 &DayCost)
+void game::Location::setDayCost(const game::r64 &DayCost)
 {
     m_DayCost = DayCost;
 }
 
-u32 Location::MinRank() const
+game::u32 game::Location::MinRank() const
 {
     return m_MinRank;
 }
 
-void Location::setMinRank(const u32 &MinRank)
+void game::Location::setMinRank(const game::u32 &MinRank)
 {
     m_MinRank = MinRank;
 }
 
-r64 Location::FlyCost() const
+game::r64 game::Location::FlyCost() const
 {
     return m_FlyCost;
 }
 
-void Location::setFlyCost(const r64 &FlyCost)
+void game::Location::setFlyCost(const game::r64 &FlyCost)
 {
     m_FlyCost = FlyCost;
 }
 
-r64 Location::TrainCost() const
+game::r64 game::Location::TrainCost() const
 {
     return m_TrainCost;
 }
 
-void Location::setTrainCost(const r64 &TrainCost)
+void game::Location::setTrainCost(const game::r64 &TrainCost)
 {
     m_TrainCost = TrainCost;
 }
 
-r64 Location::HouseCost() const
+game::r64 game::Location::HouseCost() const
 {
     return m_HouseCost;
 }
 
-void Location::setHouseCost(const r64 &HouseCost)
+void game::Location::setHouseCost(const game::r64 &HouseCost)
 {
     m_HouseCost = HouseCost;
 }

@@ -1,31 +1,31 @@
 #include "game/gameengine.hpp"
 
-IFormBase::formname_e GameEngine::CurrentForm() const
+game::IFormBase::formname_e game::GameEngine::CurrentForm() const
 {
     return m_CurrentForm;
 }
 
-void GameEngine::setCurrentForm(const IFormBase::formname_e &CurrentForm)
+void game::GameEngine::setCurrentForm(const game::IFormBase::formname_e &CurrentForm)
 {
     m_CurrentForm = CurrentForm;
 }
 
-Location GameEngine::CurrentLocation() const
+game::Location game::GameEngine::CurrentLocation() const
 {
     return m_CurrentLocation;
 }
 
-void GameEngine::setCurrentLocation(const Location &CurrentLocation)
+void game::GameEngine::setCurrentLocation(const game::Location &CurrentLocation)
 {
     m_CurrentLocation = CurrentLocation;
 }
 
-Place GameEngine::Place() const
+game::Place game::GameEngine::getPlace() const
 {
     return m_Place;
 }
 
-void GameEngine::setPlace(const Place &Place)
+void game::GameEngine::setPlace(const game::Place &Place)
 {
     m_Place = Place;
 }

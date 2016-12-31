@@ -24,7 +24,7 @@ public:
     Location CurrentLocation() const;
     void setCurrentLocation(const Location &CurrentLocation);
 
-    Place Place() const;
+    Place getPlace() const;
     void setPlace(const Place &Place);
 };
 

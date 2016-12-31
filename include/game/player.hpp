@@ -40,7 +40,7 @@ public:
     u32 Alcogol() const;
     void setAlcogol(const u32 &Alcogol);
 
-    Bag Bag() const;
+    Bag getBag() const;
     void setBag(const Bag &Bag);
 
     PlayerStats Stats() const;

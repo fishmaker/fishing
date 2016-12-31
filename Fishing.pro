@@ -34,7 +34,9 @@ SOURCES += main.cpp \
     src/sellfishview.cpp \
     src/selectplaceview.cpp \
     src/travelview.cpp \
-    src/fishingview.cpp
+    src/fishingview.cpp \
+    src/ifishingrod.cpp \
+    src/igameitem.cpp
 
 HEADERS  += \
     include/game/fishspeed.hpp \
@@ -52,7 +54,6 @@ HEADERS  += \
     include/game/View/welcomeview.hpp \
     include/game/ibasiccatch.hpp \
     include/game/catchtypes.hpp \
-    include/game/fish.h \
     include/game/gameworld.hpp \
     include/game/location.hpp \
     include/game/place.hpp \
@@ -66,7 +67,10 @@ HEADERS  += \
     include/game/View/sellfishview.hpp \
     include/game/View/selectplaceview.hpp \
     include/game/View/travelview.hpp \
-    include/game/View/fishingview.hpp
+    include/game/View/fishingview.hpp \
+    include/game/fish.hpp \
+    include/game/ifishingrod.hpp \
+    include/game/igameitem.hpp
 
 INCLUDEPATH += include
 

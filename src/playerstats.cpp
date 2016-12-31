@@ -1,71 +1,71 @@
 #include "game/playerstats.hpp"
 
-u32 PlayerStats::Catched() const
+game::u32 game::PlayerStats::Catched() const
 {
     return m_Catched;
 }
 
-void PlayerStats::setCatched(const u32 &Catched)
+void game::PlayerStats::setCatched(const game::u32 &Catched)
 {
     m_Catched = Catched;
 }
 
-u32 PlayerStats::Released() const
+game::u32 game::PlayerStats::Released() const
 {
     return m_Released;
 }
 
-void PlayerStats::setReleased(const u32 &Released)
+void game::PlayerStats::setReleased(const game::u32 &Released)
 {
     m_Released = Released;
 }
 
-u64 PlayerStats::Karma() const
+game::u64 game::PlayerStats::Karma() const
 {
     return m_Karma;
 }
 
-void PlayerStats::setKarma(const u64 &Karma)
+void game::PlayerStats::setKarma(const game::u64 &Karma)
 {
     m_Karma = Karma;
 }
 
-UString PlayerStats::Status() const
+game::UString game::PlayerStats::Status() const
 {
     return m_Status;
 }
 
-void PlayerStats::setStatus(const UString &Status)
+void game::PlayerStats::setStatus(const game::UString &Status)
 {
     m_Status = Status;
 }
 
-r64 PlayerStats::RecordWeight() const
+game::r64 game::PlayerStats::RecordWeight() const
 {
     return m_RecordWeight;
 }
 
-void PlayerStats::setRecordWeight(const r64 &RecordWeight)
+void game::PlayerStats::setRecordWeight(const game::r64 &RecordWeight)
 {
     m_RecordWeight = RecordWeight;
 }
 
-u32 PlayerStats::BrokenRods() const
+game::u32 game::PlayerStats::BrokenRods() const
 {
     return m_BrokenRods;
 }
 
-void PlayerStats::setBrokenRods(const u32 &BrokenRods)
+void game::PlayerStats::setBrokenRods(const game::u32 &BrokenRods)
 {
     m_BrokenRods = BrokenRods;
 }
 
-u32 PlayerStats::BrokenReels() const
+game::u32 game::PlayerStats::BrokenReels() const
 {
     return m_BrokenReels;
 }
 
-void PlayerStats::setBrokenReels(const u32 &BrokenReels)
+void game::PlayerStats::setBrokenReels(const game::u32 &BrokenReels)
 {
     m_BrokenReels = BrokenReels;
 }
