@@ -28,7 +28,13 @@ SOURCES += main.cpp \
     src/bag.cpp \
     src/welcomemodel.cpp \
     src/welcomecontroller.cpp \
-    src/playerstats.cpp
+    src/playerstats.cpp \
+    src/lobbyview.cpp \
+    src/shopview.cpp \
+    src/sellfishview.cpp \
+    src/selectplaceview.cpp \
+    src/travelview.cpp \
+    src/fishingview.cpp
 
 HEADERS  += \
     include/game/fishspeed.hpp \
@@ -54,9 +60,21 @@ HEADERS  += \
     include/game/bag.hpp \
     include/game/Model/welcomemodel.hpp \
     include/game/Controller/welcomecontroller.hpp \
-    include/game/playerstats.hpp
+    include/game/playerstats.hpp \
+    include/game/View/lobbyview.hpp \
+    include/game/View/shopview.hpp \
+    include/game/View/sellfishview.hpp \
+    include/game/View/selectplaceview.hpp \
+    include/game/View/travelview.hpp \
+    include/game/View/fishingview.hpp
 
 INCLUDEPATH += include
 
 FORMS += \
-    welcomeview.ui
+    welcomeview.ui \
+    lobbyview.ui \
+    shopview.ui \
+    sellfishview.ui \
+    selectplaceview.ui \
+    travelview.ui \
+    fishingview.ui
