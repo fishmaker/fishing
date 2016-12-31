@@ -7,6 +7,7 @@ namespace game {
 
 class IFishingRod
 {
+protected:
     r64 m_MaxWeight;
     u32 m_Condition; // состояние
     r64 m_RelaxSpeed; // время снятия напряжения

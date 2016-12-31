@@ -43,7 +43,15 @@ SOURCES += main.cpp \
     src/badchoiceexception.cpp \
     src/notenoughexception.cpp \
     src/incorrectexception.cpp \
-    src/notselectedexception.cpp
+    src/notselectedexception.cpp \
+    src/rod.cpp \
+    src/spinning.cpp \
+    src/reel.cpp \
+    src/bait.cpp \
+    src/line.cpp \
+    src/ihook.cpp \
+    src/hook.cpp \
+    src/spoon.cpp
 
 HEADERS  += \
     include/game/fishspeed.hpp \
@@ -84,7 +92,15 @@ HEADERS  += \
     include/game/Exceptions/badchoiceexception.hpp \
     include/game/Exceptions/notenoughexception.hpp \
     include/game/Exceptions/incorrectexception.hpp \
-    include/game/Exceptions/notselectedexception.hpp
+    include/game/Exceptions/notselectedexception.hpp \
+    include/game/rod.hpp \
+    include/game/spinning.hpp \
+    include/game/reel.hpp \
+    include/game/bait.hpp \
+    include/game/line.hpp \
+    include/game/ihook.hpp \
+    include/game/hook.hpp \
+    include/game/spoon.hpp
 
 INCLUDEPATH += include
 

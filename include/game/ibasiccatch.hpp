@@ -10,6 +10,7 @@ namespace game {
 
 class IBasicCatch
 {    
+protected:
     UString             m_Name;           // имя: Плотва
     UString             m_Description;    // описание: Питается ...
     QString             m_ImagePath;      // путь к картинке: ":/fishes/111.png"
@@ -25,7 +26,6 @@ public:
     explicit IBasicCatch();
     // TODO: Конструктор всяго
     virtual ~IBasicCatch();
-
 
     UString Name() const;
     void setName(const UString &Name);
