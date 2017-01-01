@@ -16,8 +16,6 @@ typedef enum : i32 {
 class IFormBase
 {
 public:
-
-public:
     IFormBase();
     virtual ~IFormBase();
 

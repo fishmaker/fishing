@@ -2,8 +2,8 @@
 #define ROD_H
 
 #include "game/common/common.hpp"
-#include "game/igameitem.hpp"
-#include "game/ifishingrod.hpp"
+#include "game/Interfaces/igameitem.hpp"
+#include "game/Interfaces/ifishingrod.hpp"
 
 namespace game {
 

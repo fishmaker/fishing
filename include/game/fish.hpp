@@ -6,7 +6,7 @@
 #include "game/common/common.hpp"
 #include "game/common/catchtypes.hpp"
 #include "game/common/tables.hpp"
-#include "game/ibasiccatch.hpp"
+#include "game/Interfaces/ibasiccatch.hpp"
 
 namespace game {
 
@@ -21,7 +21,6 @@ typedef enum : i32 {
     AC_EAR      = 0b10000000, // сделать уху
     AC_BAG      = 0b0000000100000000,   // перекинуть в рюкзак
 } fishactions_e;
-
 
 class Fish : public IBasicCatch
 {
@@ -42,14 +41,70 @@ class Fish : public IBasicCatch
     i32                 m_CatchTime;        // MAX время на вылов (после подсечки)
     i32                 m_Frequency;        // MAX активность рыбы (после подсечки)
     r64                 m_FishSpeed;        // MAX скорость рыбы (после подсечки)
-    tableDepthSize_t    depth_size;         // таблица глубина - размер
-    tableTimeActivity_t time_activity;      // таблица время - активность
-    tableBaitCatch_t    bait_catch;         // таблица наживка - улов
+    tableDepthSize_t    m_vDepthSize;       // таблица глубина - размер
+    tableTimeActivity_t m_vTimeActivity;    // таблица время - активность
+    tableBaitCatch_t    m_vBaitCatch;       // таблица наживка - улов
 
 public:
     explicit Fish();
     ~Fish();
 
+    UString Name() const;
+    void setName(const UString &Name);
+
+    UString Description() const;
+    void setDescription(const UString &Description);
+
+    UString PlaceName() const;
+    void setPlaceName(const UString &PlaceName);
+
+    UString BaitName() const;
+    void setBaitName(const UString &BaitName);
+
+    QString ImagePath() const;
+    void setImagePath(const QString &ImagePath);
+
+    catchtype_e FishType() const;
+    void setFishType(const catchtype_e &FishType);
+
+    fishactions_e Actions() const;
+    void setActions(const fishactions_e &Actions);
+
+    r64 MinWeight() const;
+    void setMinWeight(const r64 &MinWeight);
+
+    r64 MaxWeight() const;
+    void setMaxWeight(const r64 &MaxWeight);
+
+    r64 Price() const;
+    void setPrice(const r64 &Price);
+
+    r64 Expirience() const;
+    void setExpirience(const r64 &Expirience);
+
+    i32 BitingTime() const;
+    void setBitingTime(const i32 &BitingTime);
+
+    i32 FreqBite() const;
+    void setFreqBite(const i32 &FreqBite);
+
+    i32 PlayerReaction() const;
+    void setPlayerReaction(const i32 &PlayerReaction);
+
+    i32 CatchTime() const;
+    void setCatchTime(const i32 &CatchTime);
+
+    i32 Frequency() const;
+    void setFrequency(const i32 &Frequency);
+
+    r64 FishSpeed() const;
+    void setFishSpeed(const r64 &FishSpeed);
+
+    const tableDepthSize_t* vDepthSize() const;
+
+    const tableTimeActivity_t* vTimeActivity() const;
+
+    const tableBaitCatch_t* vBaitCatch() const;
 };
 
 } // namespace game

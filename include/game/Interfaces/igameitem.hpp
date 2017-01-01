@@ -29,6 +29,37 @@ typedef enum : i32 {
 
 class IGameItem
 {
+public:
+    explicit IGameItem();
+    virtual ~IGameItem();
+
+    UString Name() const;
+    void setName(const UString &Name);
+
+    UString Description() const;
+    void setDescription(const UString &Description);
+
+    r64 BuyPrice() const;
+    void setBuyPrice(const r64 &BuyPrice);
+
+    r64 SellPriceP1P() const;
+    void setSellPriceP1P(const r64 &SellPriceP1P);
+
+    r64 SelfWeight() const;
+    void setSelfWeight(const r64 &SelfWeight);
+
+    u32 Count() const;
+    void setCount(const u32 &Count);
+
+    u32 MinRank() const;
+    void setMinRank(const u32 &MinRank);
+
+    itemrarity_e Rarity() const;
+    void setRarity(const itemrarity_e &Rarity);
+
+    itemtype_e Type() const;
+    void setType(const itemtype_e &Type);
+
 protected:
     UString             m_Name;
     UString             m_Description;
@@ -39,10 +70,6 @@ protected:
     u32                 m_MinRank;
     itemrarity_e        m_Rarity;
     itemtype_e          m_Type;
-
-public:
-    explicit IGameItem();
-    virtual ~IGameItem();
 };
 
 } // namespace game

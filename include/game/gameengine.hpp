@@ -1,9 +1,9 @@
 #ifndef GAMEENGINE_H
 #define GAMEENGINE_H
 
-#include "game/iformbase.hpp"
-#include "game/location.hpp"
-#include "game/place.hpp"
+#include "game/Interfaces/iformbase.hpp"
+#include "game/World/location.hpp"
+#include "game/World/place.hpp"
 
 namespace game {
 
@@ -17,9 +17,6 @@ class GameEngine
 public:
     explicit GameEngine();
     ~GameEngine();
-
-
-
 };
 
 } // namespace game

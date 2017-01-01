@@ -60,24 +60,19 @@ void game::Player::setAlcogol(const game::u32 &Alcogol)
     m_Alcogol = Alcogol;
 }
 
-game::Bag game::Player::getBag() const
+game::Bag* game::Player::getBag()
 {
-    return m_Bag;
+    return &m_Bag;
 }
 
-void game::Player::setBag(const game::Bag &Bag)
+game::PlayerStats* game::Player::Stats()
 {
-    m_Bag = Bag;
+    return &m_Stats;
 }
 
-game::PlayerStats game::Player::Stats() const
+game::Suitcase* game::Player::getSuitcase()
 {
-    return m_Stats;
-}
-
-void game::Player::setStats(const game::PlayerStats &Stats)
-{
-    m_Stats = Stats;
+    return &m_Suitcase;
 }
 
 game::Player::Player()

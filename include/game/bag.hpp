@@ -5,7 +5,6 @@ namespace game {
 
 class Bag
 {
-
 public:
     explicit Bag();
     virtual ~Bag();

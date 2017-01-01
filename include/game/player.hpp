@@ -16,9 +16,9 @@ class Player
     r64 m_Money;
     u32 m_Hungry;
     u32 m_Alcogol;
-    Bag m_Bag; // TODO: get/set??
-    Suitcase m_Suitcase; // TODO: get/set??
-    PlayerStats m_Stats; // TODO: get/set??
+    Bag m_Bag;
+    Suitcase m_Suitcase;
+    PlayerStats m_Stats;
 
 public:
     explicit Player();
@@ -42,11 +42,11 @@ public:
     u32 Alcogol() const;
     void setAlcogol(const u32 &Alcogol);
 
-    Bag getBag() const;
-    void setBag(const Bag &Bag);
+    Bag* getBag();
 
-    PlayerStats Stats() const;
-    void setStats(const PlayerStats &Stats);
+    PlayerStats* Stats();
+
+    Suitcase* getSuitcase();
 };
 
 } // namespace game

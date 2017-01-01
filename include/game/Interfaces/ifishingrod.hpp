@@ -7,11 +7,6 @@ namespace game {
 
 class IFishingRod
 {
-protected:
-    r64 m_MaxWeight;
-    u32 m_Condition; // состояние
-    r64 m_RelaxSpeed; // время снятия напряжения
-
 public:
     explicit IFishingRod();
     virtual ~IFishingRod();
@@ -24,6 +19,11 @@ public:
 
     r64 RelaxSpeed() const;
     void setRelaxSpeed(const r64 &RelaxSpeed);
+
+protected:
+    r64 m_MaxWeight;
+    r64 m_RelaxSpeed;       // время снятия напряжения
+    u32 m_Condition;        // состояние
 };
 
 } // namespace game

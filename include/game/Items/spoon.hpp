@@ -1,8 +1,8 @@
 #ifndef SPOON_H
 #define SPOON_H
 
-#include "game/ihook.hpp"
-#include "game/igameitem.hpp"
+#include "game/Interfaces/ihook.hpp"
+#include "game/Interfaces/igameitem.hpp"
 
 namespace game {
 

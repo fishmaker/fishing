@@ -8,7 +8,7 @@
 namespace game {
 
 typedef enum : i32 {
-    CT_NORMAL       = 0b00000001, // типичная   [0%  .. 60%]
+    CT_NORMAL       = 0b00000001, // типичная   [20% .. 60%]
     CT_CREDIT       = 0b00000010, // зачетная   [60% .. 90%]
     CT_TROPHY       = 0b00000100, // трофейная  [90% .. 120%]
     CT_GIGANT       = 0b00001000, // гигант     [120% .. 300%]
@@ -34,7 +34,7 @@ typedef enum : i32 {
 
 constexpr static const
 std::pair<i32, r64> s_fish_sizes[] = {
-    std::make_pair(1.0, 60.0),
+    std::make_pair(20.0, 60.0),
     std::make_pair(60.0, 90.0),
     std::make_pair(90.0, 120.0),
     std::make_pair(120.0, 300.0),

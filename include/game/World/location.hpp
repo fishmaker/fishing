@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "game/common/common.hpp"
-#include "game/place.hpp"
+#include "game/World/place.hpp"
 
 namespace game {
 

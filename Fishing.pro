@@ -57,12 +57,7 @@ SOURCES += main.cpp \
 HEADERS  += \
     include/game/gameengine.hpp \
     include/game/globalsettings.hpp \
-    include/game/iformbase.hpp \
     include/game/View/welcomeview.hpp \
-    include/game/ibasiccatch.hpp \
-    include/game/gameworld.hpp \
-    include/game/location.hpp \
-    include/game/place.hpp \
     include/game/player.hpp \
     include/game/bag.hpp \
     include/game/Model/welcomemodel.hpp \
@@ -75,8 +70,6 @@ HEADERS  += \
     include/game/View/travelview.hpp \
     include/game/View/fishingview.hpp \
     include/game/fish.hpp \
-    include/game/ifishingrod.hpp \
-    include/game/igameitem.hpp \
     include/game/suitcase.hpp \
     include/game/Exceptions/gameexception.hpp \
     include/game/Exceptions/fatalexception.hpp \
@@ -84,19 +77,26 @@ HEADERS  += \
     include/game/Exceptions/notenoughexception.hpp \
     include/game/Exceptions/incorrectexception.hpp \
     include/game/Exceptions/notselectedexception.hpp \
-    include/game/rod.hpp \
-    include/game/spinning.hpp \
-    include/game/reel.hpp \
-    include/game/bait.hpp \
-    include/game/line.hpp \
-    include/game/ihook.hpp \
-    include/game/hook.hpp \
-    include/game/spoon.hpp \
     include/game/globaldatabase.hpp \
     include/game/common/catchtypes.hpp \
     include/game/common/common.hpp \
     include/game/common/daytimes.hpp \
-    include/game/common/tables.hpp
+    include/game/common/tables.hpp \
+    include/game/Items/bait.hpp \
+    include/game/Items/hook.hpp \
+    include/game/Items/line.hpp \
+    include/game/Items/reel.hpp \
+    include/game/Items/rod.hpp \
+    include/game/Items/spinning.hpp \
+    include/game/Items/spoon.hpp \
+    include/game/Interfaces/ibasiccatch.hpp \
+    include/game/Interfaces/ifishingrod.hpp \
+    include/game/Interfaces/iformbase.hpp \
+    include/game/Interfaces/igameitem.hpp \
+    include/game/Interfaces/ihook.hpp \
+    include/game/World/gameworld.hpp \
+    include/game/World/location.hpp \
+    include/game/World/place.hpp
 
 INCLUDEPATH += include
 

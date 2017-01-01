@@ -1,4 +1,4 @@
-#include "game/ifishingrod.hpp"
+#include "game/Interfaces/ifishingrod.hpp"
 
 game::r64 game::IFishingRod::MaxWeight() const
 {

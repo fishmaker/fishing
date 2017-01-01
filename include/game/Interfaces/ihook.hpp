@@ -22,16 +22,14 @@ typedef enum : i32 {
 class IHook
 {
 public:
-
-protected:
-    hooksize_e  m_Size;
-
-public:
     IHook();
     virtual ~IHook();
 
     hooksize_e Size() const;
     void setSize(const hooksize_e &Size);
+
+protected:
+    hooksize_e  m_Size;
 };
 
 } // namespace game

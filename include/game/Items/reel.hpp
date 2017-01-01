@@ -2,7 +2,7 @@
 #define REEL_H
 
 #include "game/common/common.hpp"
-#include "game/igameitem.hpp"
+#include "game/Interfaces/igameitem.hpp"
 
 namespace game {
 
