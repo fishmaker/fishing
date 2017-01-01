@@ -9,18 +9,32 @@ namespace game {
 
 class Fish : public IBasicCatch
 {
-    catchclass_e    m_CatchClass;   // CC_FISH
     i32             m_BitingTime;   // время клева
     i32             m_FreqBite;     // частота клева
     i32             m_PlayerReactionTime;   // время на реакцию у игрока
     i32             m_MaxCatchTime; // максимум времени у игрока на вываживание
 
 public:
-    Fish();
+    // Всем занимается std::bind() с параметрами
+    explicit Fish(/* IBasicCatch */
+                  const catchclass_e a_CatchClass,
+                  UString &&a_Name,
+                  UString &&a_Description,
+                  QString &&a_ImagePath,
+                  const catchtype_e a_FishType,
+                  const r64 a_Weight,
+                  const r64 a_Price,
+                  const i32 a_Expirience,
+                  const i32 a_Depth,
+                  UString &&a_PlaceName,
+                  UString &&a_BaitName,
+                  /* Fish */
+                  const i32 a_BitingTime,
+                  const i32 a_FreqBite,
+                  const i32 a_PlayerReactionTime,
+                  const i32 a_MaxCatchTime);
     ~Fish();
 
-    catchclass_e CatchClass() const;
-    void setCatchClass(const catchclass_e &CatchClass);
 };
 
 } // namespace game

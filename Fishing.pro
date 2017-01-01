@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-CONFIG += c++11
+CONFIG += c++14
 
 TARGET = Fishing
 TEMPLATE = app
@@ -51,7 +51,8 @@ SOURCES += main.cpp \
     src/line.cpp \
     src/ihook.cpp \
     src/hook.cpp \
-    src/spoon.cpp
+    src/spoon.cpp \
+    src/globaldatabase.cpp
 
 HEADERS  += \
     include/game/fishspeed.hpp \
@@ -100,7 +101,8 @@ HEADERS  += \
     include/game/line.hpp \
     include/game/ihook.hpp \
     include/game/hook.hpp \
-    include/game/spoon.hpp
+    include/game/spoon.hpp \
+    include/game/globaldatabase.hpp
 
 INCLUDEPATH += include
 
@@ -112,3 +114,6 @@ FORMS += \
     selectplaceview.ui \
     travelview.ui \
     fishingview.ui
+
+RESOURCES += \
+    resources.qrc

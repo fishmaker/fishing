@@ -11,6 +11,7 @@ namespace game {
 class IBasicCatch
 {    
 protected:
+    catchclass_e        m_CatchClass;     // CC_FISH
     UString             m_Name;           // имя: Плотва
     UString             m_Description;    // описание: Питается ...
     QString             m_ImagePath;      // путь к картинке: ":/fishes/111.png"
@@ -23,8 +24,18 @@ protected:
     UString             m_BaitName;       // название наживки
 
 public:
-    explicit IBasicCatch();
-    // TODO: Конструктор всяго
+    explicit IBasicCatch(); // TODO: delete this, use only with parameters
+    explicit IBasicCatch(const catchclass_e a_CatchClass,
+                         UString &&a_Name,
+                         UString &&a_Description,
+                         QString &&a_ImagePath,
+                         const catchtype_e a_FishType,
+                         const r64 a_Weight,
+                         const r64 a_Price,
+                         const i32 a_Expirience,
+                         const i32 a_Depth,
+                         UString &&a_PlaceName,
+                         UString &&a_BaitName);
     virtual ~IBasicCatch();
 
     UString Name() const;
@@ -56,6 +67,9 @@ public:
 
     UString BaitName() const;
     void setBaitName(const UString &BaitName);
+
+    catchclass_e CatchClass() const;
+    void setCatchClass(const catchclass_e &CatchClass);
 };
 
 } // namespace game

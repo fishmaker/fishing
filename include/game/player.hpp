@@ -4,6 +4,7 @@
 #include "game/common.hpp"
 #include "game/bag.hpp"
 #include "game/playerstats.hpp"
+#include "game/suitcase.hpp"
 
 namespace game {
 
@@ -15,8 +16,9 @@ class Player
     r64 m_Money;
     u32 m_Hungry;
     u32 m_Alcogol;
-    Bag m_Bag;
-    PlayerStats m_Stats;
+    Bag m_Bag; // TODO: get/set??
+    Suitcase m_Suitcase; // TODO: get/set??
+    PlayerStats m_Stats; // TODO: get/set??
 
 public:
     explicit Player();

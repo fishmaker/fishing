@@ -100,9 +100,45 @@ void game::IBasicCatch::setBaitName(const game::UString &BaitName)
     m_BaitName = BaitName;
 }
 
+game::catchclass_e game::IBasicCatch::CatchClass() const
+{
+    return m_CatchClass;
+}
+
+void game::IBasicCatch::setCatchClass(const game::catchclass_e &CatchClass)
+{
+    m_CatchClass = CatchClass;
+}
+
 game::IBasicCatch::IBasicCatch()
 {
     
+}
+
+game::IBasicCatch::IBasicCatch(const catchclass_e a_CatchClass,
+                               UString &&a_Name,
+                               UString &&a_Description,
+                               QString &&a_ImagePath,
+                               const catchtype_e a_FishType,
+                               const r64 a_Weight,
+                               const r64 a_Price,
+                               const i32 a_Expirience,
+                               const i32 a_Depth,
+                               UString &&a_PlaceName,
+                               UString &&a_BaitName)
+    : m_CatchClass(a_CatchClass),
+      m_Name(std::move(a_Name)),
+      m_Description(std::move(a_Description)),
+      m_ImagePath(std::move(a_ImagePath)),
+      m_FishType(a_FishType),
+      m_Weight(a_Weight),
+      m_Price(a_Price),
+      m_Expirience(a_Expirience),
+      m_Depth(a_Depth),
+      m_PlaceName(std::move(a_PlaceName)),
+      m_BaitName(std::move(a_BaitName))
+{
+
 }
 
 game::IBasicCatch::~IBasicCatch()
