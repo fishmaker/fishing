@@ -6,10 +6,14 @@
 #include <QtCore>
 #include <QImage>
 
-#include "game/common.hpp"
-#include "game/fishstructs.hpp"
+#include "game/common/common.hpp"
 
 namespace game {
+
+typedef struct {
+    i32       ID;
+    i32     count;
+} fishplaceinfo_t;
 
 class Place
 {

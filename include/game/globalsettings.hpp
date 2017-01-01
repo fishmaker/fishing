@@ -3,7 +3,7 @@
 
 #include <QtCore>
 
-#include <game/common.hpp>
+#include <game/common/common.hpp>
 
 namespace game {
 

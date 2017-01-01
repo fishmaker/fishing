@@ -1,23 +1,21 @@
 #ifndef ROD_H
 #define ROD_H
 
-#include "game/common.hpp"
+#include "game/common/common.hpp"
 #include "game/igameitem.hpp"
 #include "game/ifishingrod.hpp"
 
 namespace game {
 
+typedef enum : i32 {
+    RA_ABORT            = 0b00000001, // выкинуть
+    RA_REPAIR           = 0b00000010, // ремонтировать
+    RA_SIGN             = 0b00000100, // подписать
+    RA_UPGRADE          = 0b00001000, // улучшить
+} rodactions_e;
+
 class Rod : public IGameItem, public IFishingRod
 {
-public:
-    typedef enum : i32 {
-        RA_ABORT            = 0b00000001, // выкинуть
-        RA_REPAIR           = 0b00000010, // ремонтировать
-        RA_SIGN             = 0b00000100, // подписать
-        RA_UPGRADE          = 0b00001000, // улучшить
-    } rodactions_e;
-
-private:
     u32     m_Depth; // текущая глубина
     rodactions_e    m_Actions;  // Доступные действия
 

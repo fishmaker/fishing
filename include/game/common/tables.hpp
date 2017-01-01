@@ -4,9 +4,8 @@
 #include <utility>
 #include <vector>
 
-#include "game/common.hpp"
-#include "game/daytimes.hpp"
-#include "game/fishsizes.hpp"
+#include "game/common/common.hpp"
+#include "game/common/daytimes.hpp"
 
 namespace game {
 
@@ -22,7 +21,7 @@ typedef struct table<i32, r64> tableBaitCatch_t;
 typedef struct table<daytimes_e, r64> tableTimeActivity_t;
 
 // Таблица 2х5 Глубина <-> Размер
-typedef struct table<i32, fishsizes_e> tableDepthSize_t;
+typedef struct table<i32, r64> tableDepthSize_t;
 
 } // namespace game
 

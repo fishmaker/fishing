@@ -20,12 +20,12 @@ void game::Reel::setRelaxSpeed(const game::r64 &RelaxSpeed)
     m_RelaxSpeed = RelaxSpeed;
 }
 
-game::Reel::reelactions_e game::Reel::Actions() const
+game::reelactions_e game::Reel::Actions() const
 {
     return m_Actions;
 }
 
-void game::Reel::setActions(const game::Reel::reelactions_e &Actions)
+void game::Reel::setActions(const game::reelactions_e &Actions)
 {
     m_Actions = Actions;
 }

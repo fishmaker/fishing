@@ -22,15 +22,6 @@ typedef long double             r80;
 using LString                   = std::string;
 using UString                   = std::wstring;
 
-/*
- * TODO: template variable
-template<typename T> constexpr T DEFAULT = -1;
-template<> constexpr r64 DEFAULT<r64> = -1.0;
-template<> constexpr i32 DEFAULT<i32> = -1;
-template<> LString DEFAULT<LString> = LString("DEFAULT");
-template<> UString DEFAULT<UString> = UString(L"DEFAULT");
-*/
-
 } // namespace game
 
 #endif // COMMON_H

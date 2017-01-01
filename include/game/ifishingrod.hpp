@@ -1,7 +1,7 @@
 #ifndef IFISHINGROD_H
 #define IFISHINGROD_H
 
-#include "game/common.hpp"
+#include "game/common/common.hpp"
 
 namespace game {
 

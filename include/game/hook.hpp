@@ -8,15 +8,6 @@ namespace game {
 
 class Hook : public IHook, public IGameItem
 {
-public:
-    typedef enum : i32 {
-        SS_STRONG,
-        SS_WEAK,
-        SS_VERYSTRONG,
-        SS_GOOD,
-    } hookstrength_e;
-
-private:
     hookstrength_e  m_Strength;
 
 public:

@@ -1,7 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "game/common.hpp"
+#include "game/common/common.hpp"
 #include "game/bag.hpp"
 #include "game/playerstats.hpp"
 #include "game/suitcase.hpp"

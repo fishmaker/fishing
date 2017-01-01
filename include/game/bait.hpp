@@ -1,7 +1,7 @@
 #ifndef BAIT_H
 #define BAIT_H
 
-#include "game/common.hpp"
+#include "game/common/common.hpp"
 #include "game/igameitem.hpp"
 
 namespace game {

@@ -18,7 +18,6 @@ SOURCES += main.cpp \
     src/gameengine.cpp \
     src/iformbase.cpp \
     src/welcomeview.cpp \
-    src/fishdatabase.cpp \
     src/ibasiccatch.cpp \
     src/fish.cpp \
     src/gameworld.cpp \
@@ -52,24 +51,15 @@ SOURCES += main.cpp \
     src/ihook.cpp \
     src/hook.cpp \
     src/spoon.cpp \
-    src/globaldatabase.cpp
+    src/globaldatabase.cpp \
+    src/fishstructs.cpp
 
 HEADERS  += \
-    include/game/fishspeed.hpp \
-    include/game/daytimes.hpp \
-    include/game/common.hpp \
-    include/game/fishactions.hpp \
-    include/game/fishdatabase.hpp \
-    include/game/fishsizes.hpp \
-    include/game/fishfrequency.hpp \
-    include/game/fishstructs.hpp \
     include/game/gameengine.hpp \
     include/game/globalsettings.hpp \
-    include/game/tables.hpp \
     include/game/iformbase.hpp \
     include/game/View/welcomeview.hpp \
     include/game/ibasiccatch.hpp \
-    include/game/catchtypes.hpp \
     include/game/gameworld.hpp \
     include/game/location.hpp \
     include/game/place.hpp \
@@ -102,7 +92,11 @@ HEADERS  += \
     include/game/ihook.hpp \
     include/game/hook.hpp \
     include/game/spoon.hpp \
-    include/game/globaldatabase.hpp
+    include/game/globaldatabase.hpp \
+    include/game/common/catchtypes.hpp \
+    include/game/common/common.hpp \
+    include/game/common/daytimes.hpp \
+    include/game/common/tables.hpp
 
 INCLUDEPATH += include
 

@@ -1,38 +1,53 @@
 #ifndef FISH_H
 #define FISH_H
 
-#include "game/common.hpp"
+#include <QtCore>
+
+#include "game/common/common.hpp"
+#include "game/common/catchtypes.hpp"
+#include "game/common/tables.hpp"
 #include "game/ibasiccatch.hpp"
-#include "game/catchtypes.hpp"
 
 namespace game {
 
+typedef enum : i32 {
+    AC_DRY      = 0b00000001, // засушить
+    AC_CUT      = 0b00000010, // порезать
+    AC_BAITFISH = 0b00000100, // живец
+    AC_SMOKE    = 0b00001000, // закоптить
+    AC_LURE     = 0b00010000, // прикорм
+    AC_TROPHY   = 0b00100000, // сделать трофей
+    AC_CANNED   = 0b01000000, // сделать консервы
+    AC_EAR      = 0b10000000, // сделать уху
+    AC_BAG      = 0b0000000100000000,   // перекинуть в рюкзак
+} fishactions_e;
+
+
 class Fish : public IBasicCatch
 {
-    i32             m_BitingTime;   // время клева
-    i32             m_FreqBite;     // частота клева
-    i32             m_PlayerReactionTime;   // время на реакцию у игрока
-    i32             m_MaxCatchTime; // максимум времени у игрока на вываживание
+    UString             m_Name;             // имя: Плотва
+    UString             m_Description;      // описание: Питается ...
+    UString             m_PlaceName;        // названия места
+    UString             m_BaitName;         // название наживки
+    QString             m_ImagePath;        // путь к картинке: ":/fishes/111.png"
+    catchtype_e         m_FishType;         // размерность добычи
+    fishactions_e       m_Actions;          // доступные действия
+    r64                 m_MinWeight;        // минимальный вес: 1.232 - 1кг 232г
+    r64                 m_MaxWeight;        // максимальный вес
+    r64                 m_Price;            // стоимость за 1г
+    r64                 m_Expirience;       // сколько приносит опыта за 1г
+    i32                 m_BitingTime;       // MAX время клева (до подсечки)
+    i32                 m_FreqBite;         // MAX частота колебания поплавка (до подсечки)
+    i32                 m_PlayerReaction;   // MAX время на реакцию у игрока (до подсечки)
+    i32                 m_CatchTime;        // MAX время на вылов (после подсечки)
+    i32                 m_Frequency;        // MAX активность рыбы (после подсечки)
+    r64                 m_FishSpeed;        // MAX скорость рыбы (после подсечки)
+    tableDepthSize_t    depth_size;         // таблица глубина - размер
+    tableTimeActivity_t time_activity;      // таблица время - активность
+    tableBaitCatch_t    bait_catch;         // таблица наживка - улов
 
 public:
-    // Всем занимается std::bind() с параметрами
-    explicit Fish(/* IBasicCatch */
-                  const catchclass_e a_CatchClass,
-                  UString &&a_Name,
-                  UString &&a_Description,
-                  QString &&a_ImagePath,
-                  const catchtype_e a_FishType,
-                  const r64 a_Weight,
-                  const r64 a_Price,
-                  const i32 a_Expirience,
-                  const i32 a_Depth,
-                  UString &&a_PlaceName,
-                  UString &&a_BaitName,
-                  /* Fish */
-                  const i32 a_BitingTime,
-                  const i32 a_FreqBite,
-                  const i32 a_PlayerReactionTime,
-                  const i32 a_MaxCatchTime);
+    explicit Fish();
     ~Fish();
 
 };

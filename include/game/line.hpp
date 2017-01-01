@@ -1,12 +1,12 @@
 #ifndef LINE_H
 #define LINE_H
 
-#include "game/common.hpp"
+#include "game/common/common.hpp"
 #include "game/igameitem.hpp"
 
 namespace game {
 
-class Line
+class Line : public IGameItem
 {
     u32 m_Length;
     r64 m_MaxWeight;

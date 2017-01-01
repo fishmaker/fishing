@@ -3,7 +3,7 @@
 
 #include <vector>
 
-#include "game/common.hpp"
+#include "game/common/common.hpp"
 #include "game/place.hpp"
 
 namespace game {

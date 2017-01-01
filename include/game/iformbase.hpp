@@ -1,20 +1,21 @@
 #ifndef IFORMBASE_H
 #define IFORMBASE_H
 
-#include "game/common.hpp"
+#include "game/common/common.hpp"
 
 namespace game {
+
+typedef enum : i32 {
+    FN_WELCOME          = 0,
+    FN_BASE,
+    FN_SHOP,
+    // TODO: another windows
+    FN_BOUND        // always last!
+} formname_e;
 
 class IFormBase
 {
 public:
-    typedef enum : i32 {
-        FN_WELCOME          = 0,
-        FN_BASE,
-        FN_SHOP,
-        // TODO: another windows
-        FN_BOUND        // always last!
-    } formname_e;
 
 public:
     IFormBase();

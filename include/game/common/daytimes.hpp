@@ -1,7 +1,7 @@
 #ifndef DAYTIMES_HPP
 #define DAYTIMES_HPP
 
-#include "game/common.hpp"
+#include "game/common/common.hpp"
 
 namespace game {
 

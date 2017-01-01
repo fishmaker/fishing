@@ -1,7 +1,7 @@
 #ifndef PLAYERSTATS_H
 #define PLAYERSTATS_H
 
-#include "game/common.hpp"
+#include "game/common/common.hpp"
 
 namespace game {
 
