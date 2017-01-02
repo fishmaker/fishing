@@ -10,14 +10,14 @@ namespace game {
 
 class Location
 {
-    UString m_Name;
-    std::vector<Place> m_Seats;
+    UString m_Name;             // (7000)
     // TODO: Shop
-    r64 m_DayCost;
-    u32 m_MinRank;
-    r64 m_FlyCost;
-    r64 m_TrainCost;
-    r64 m_HouseCost;
+    u32 m_MinRank;              // (3000)
+    r64 m_DayCost;              // (6000)
+    r64 m_FlyCost;              // (6001)
+    r64 m_TrainCost;            // (6002)
+    r64 m_HouseCost;            // (6003)
+    std::vector<Place> m_vSeats;
 
 public:
     explicit Location();

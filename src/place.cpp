@@ -1,23 +1,13 @@
-#include "game/place.hpp"
+#include "game/World/place.hpp"
 
-QImage game::Place::BGImage() const
+QString game::Place::BGImage() const
 {
     return m_BGImage;
 }
 
-void game::Place::setBGImage(const QImage &BGImage)
+void game::Place::setBGImage(const QString &BGImage)
 {
     m_BGImage = BGImage;
-}
-
-std::vector<game::fishplaceinfo_t> game::Place::Fishes() const
-{
-    return m_Fishes;
-}
-
-void game::Place::setFishes(const std::vector<game::fishplaceinfo_t> &Fishes)
-{
-    m_Fishes = Fishes;
 }
 
 game::UString game::Place::Description() const

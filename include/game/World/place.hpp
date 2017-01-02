@@ -22,23 +22,19 @@ public:
     static const i32 TILE_HEIGHT = 16;
 
 private:
-    QImage m_BGImage;
-    i32 m_ArrayMap[TILE_HEIGHT][TILE_WIDTH]; // матрица глубин
-    std::vector<i32>    m_FishMap[TILE_HEIGHT][TILE_WIDTH]; // Зона - ID, ID, ID ...
-    std::vector<fishplaceinfo_t>    m_Fishes;
-    UString m_Description;
-    UString m_Name;
+    QString m_BGImage;                              // (8000)
+    i32 m_ArrayMap[TILE_HEIGHT][TILE_WIDTH];        // (1000-1015) матрица глубин
+    std::vector<fishplaceinfo_t>    m_FishMap[TILE_HEIGHT][TILE_WIDTH]; // (1016-1271) Зона - ID, ID, ID рыб ...
+    UString m_Description;                          // (7000)
+    UString m_Name;                                 // (7001)
 
 
 public:
     explicit Place();
     virtual ~Place();
 
-    QImage BGImage() const;
-    void setBGImage(const QImage &BGImage);
-
-    std::vector<fishplaceinfo_t> Fishes() const;
-    void setFishes(const std::vector<fishplaceinfo_t> &Fishes);
+    QString BGImage() const;
+    void setBGImage(const QString &BGImage);
 
     UString Description() const;
     void setDescription(const UString &Description);

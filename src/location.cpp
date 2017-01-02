@@ -1,4 +1,4 @@
-#include "game/location.hpp"
+#include "game/World/location.hpp"
 
 game::UString game::Location::Name() const
 {
@@ -12,12 +12,12 @@ void game::Location::setName(const game::UString &Name)
 
 std::vector<game::Place> game::Location::Seats() const
 {
-    return m_Seats;
+    return m_vSeats;
 }
 
 void game::Location::setSeats(const std::vector<game::Place> &Seats)
 {
-    m_Seats = Seats;
+    m_vSeats = Seats;
 }
 
 game::r64 game::Location::DayCost() const
