@@ -1,4 +1,4 @@
-#include "game/spinning.hpp"
+#include "game/Items/spinning.hpp"
 
 game::wirespeed_e game::Spinning::WireSpeed() const
 {

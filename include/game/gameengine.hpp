@@ -10,9 +10,9 @@ namespace game {
 class GameEngine
 {
     formname_e              m_CurrentForm;
-    IFormBase               *m_ArrayOfForms[FN_BOUND];
-    Location                m_CurrentLocation;
-    Place                   m_Place;
+    IFormBase*              m_ArrayOfForms[FN_BOUND];
+    Location                m_CurrentLocation; // TODO: ?
+    Place                   m_CurrentPlace; // TODO: ?
 
 public:
     explicit GameEngine();

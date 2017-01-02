@@ -1,30 +1,17 @@
 #include "game/View/welcomeview.hpp"
-#include "ui_welcomeview.h"
 
 game::WelcomeView::WelcomeView(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::WelcomeView)
+    QWidget(parent)
 {
-    ui->setupUi(this);
-
-    this->m_Model = new game::WelcomeModel();
-    this->m_Controller = new game::WelcomeController();
+    this->setGeometry(game::WelcomeModel::s_Geometry);
 }
 
 game::WelcomeView::~WelcomeView()
 {
-    delete ui;
-    delete this->m_Model;
-    delete this->m_Controller;
+
 }
 
-void game::WelcomeView::Startup()
+void game::WelcomeView::setModel(game::WelcomeModel *Model)
 {
-    this->m_Controller->setView(this);
-    this->m_Controller->setModel(this->m_Model);
-}
-
-void game::WelcomeView::Endup()
-{
-
+    m_Model = Model;
 }

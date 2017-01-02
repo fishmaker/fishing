@@ -28,12 +28,6 @@ SOURCES += main.cpp \
     src/welcomemodel.cpp \
     src/welcomecontroller.cpp \
     src/playerstats.cpp \
-    src/lobbyview.cpp \
-    src/shopview.cpp \
-    src/sellfishview.cpp \
-    src/selectplaceview.cpp \
-    src/travelview.cpp \
-    src/fishingview.cpp \
     src/ifishingrod.cpp \
     src/igameitem.cpp \
     src/suitcase.cpp \
@@ -63,12 +57,6 @@ HEADERS  += \
     include/game/Model/welcomemodel.hpp \
     include/game/Controller/welcomecontroller.hpp \
     include/game/playerstats.hpp \
-    include/game/View/lobbyview.hpp \
-    include/game/View/shopview.hpp \
-    include/game/View/sellfishview.hpp \
-    include/game/View/selectplaceview.hpp \
-    include/game/View/travelview.hpp \
-    include/game/View/fishingview.hpp \
     include/game/fish.hpp \
     include/game/suitcase.hpp \
     include/game/Exceptions/gameexception.hpp \
@@ -100,14 +88,7 @@ HEADERS  += \
 
 INCLUDEPATH += include
 
-FORMS += \
-    welcomeview.ui \
-    lobbyview.ui \
-    shopview.ui \
-    sellfishview.ui \
-    selectplaceview.ui \
-    travelview.ui \
-    fishingview.ui
+FORMS +=
 
 RESOURCES += \
     resources.qrc
