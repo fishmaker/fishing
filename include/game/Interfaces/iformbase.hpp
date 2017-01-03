@@ -7,8 +7,7 @@ namespace game {
 
 typedef enum : i32 {
     FN_WELCOME          = 0,
-    FN_BASE,
-    FN_SHOP,
+    FN_LOBBY,
     // TODO: another windows
     FN_BOUND        // always last!
 } formname_e;

@@ -22,6 +22,11 @@ typedef enum : i32 {
     AC_BAG      = 0b0000000100000000,   // перекинуть в рюкзак
 } fishactions_e;
 
+typedef struct {
+    i32 ID;
+    r64 weight;
+} playerscatch_t;
+
 class Fish : public IBasicCatch
 {
     UString             m_Name;             // имя: Плотва

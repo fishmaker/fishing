@@ -75,6 +75,11 @@ game::Suitcase* game::Player::getSuitcase()
     return &m_Suitcase;
 }
 
+game::FishingSet* game::Player::GetFishingSet(i32 a_No)
+{
+    return &this->m_ActiveFishingSets[a_No];
+}
+
 game::Player::Player()
 {
     

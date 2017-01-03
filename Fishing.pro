@@ -15,7 +15,6 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    src/gameengine.cpp \
     src/iformbase.cpp \
     src/welcomeview.cpp \
     src/ibasiccatch.cpp \
@@ -25,7 +24,6 @@ SOURCES += main.cpp \
     src/place.cpp \
     src/player.cpp \
     src/bag.cpp \
-    src/welcomemodel.cpp \
     src/welcomecontroller.cpp \
     src/playerstats.cpp \
     src/ifishingrod.cpp \
@@ -46,15 +44,18 @@ SOURCES += main.cpp \
     src/hook.cpp \
     src/spoon.cpp \
     src/globaldatabase.cpp \
-    src/fishstructs.cpp
+    src/fishstructs.cpp \
+    src/globalmodel.cpp \
+    src/mediator.cpp \
+    src/fishingset.cpp \
+    src/lobbyview.cpp \
+    src/defaultwindow.cpp
 
 HEADERS  += \
-    include/game/gameengine.hpp \
     include/game/globalsettings.hpp \
     include/game/View/welcomeview.hpp \
     include/game/player.hpp \
     include/game/bag.hpp \
-    include/game/Model/welcomemodel.hpp \
     include/game/Controller/welcomecontroller.hpp \
     include/game/playerstats.hpp \
     include/game/fish.hpp \
@@ -84,7 +85,12 @@ HEADERS  += \
     include/game/Interfaces/ihook.hpp \
     include/game/World/gameworld.hpp \
     include/game/World/location.hpp \
-    include/game/World/place.hpp
+    include/game/World/place.hpp \
+    include/game/Model/globalmodel.hpp \
+    include/game/mediator.hpp \
+    include/game/Items/fishingset.hpp \
+    include/game/View/lobbyview.hpp \
+    include/game/View/defaultwindow.hpp
 
 INCLUDEPATH += include
 

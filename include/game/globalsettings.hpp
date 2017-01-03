@@ -7,18 +7,11 @@
 
 namespace game {
 
-// Ширина окна
-static const i32 WINDOW_WIDTH = 1000;
-
-// Высота окна
-static const i32 WINDOW_HEIGHT = 550;
-
-// Геометрия окна
-static const QRect WINDOW_RECT = QRect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
-
-
 typedef enum : i32 {
-    DM_1055,        // 1000 x 550
+    DM_1690 = 0,        // 1600 x 900 (16:9)
+    DM_8954,            // 896 x 504  (16:9)
+    DM_8060,            // 800 x 600  (4:3)
+    DM_1278,            // 1024 x 768 (4:3)
 } dimension_e;
 
 typedef struct {

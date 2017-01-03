@@ -1,8 +1,9 @@
 #ifndef WELCOMECONTROLLER_H
 #define WELCOMECONTROLLER_H
 
+#include <QWidget>
+
 #include "game/Interfaces/iformbase.hpp"
-#include "game/Model/welcomemodel.hpp"
 #include "game/View/welcomeview.hpp"
 
 namespace game {
@@ -10,7 +11,7 @@ namespace game {
 class WelcomeController : public IFormBase
 {
 public:
-    explicit WelcomeController();
+    explicit WelcomeController(QWidget *a_Parent=0);
     virtual ~WelcomeController();
 
     void Startup();
@@ -21,7 +22,6 @@ public:
 
 
 private:
-    WelcomeModel    *m_Model;
     WelcomeView     *m_View;
 };
 

@@ -5,6 +5,7 @@
 #include "game/bag.hpp"
 #include "game/playerstats.hpp"
 #include "game/suitcase.hpp"
+#include "game/Items/fishingset.hpp"
 
 namespace game {
 
@@ -19,6 +20,7 @@ class Player
     Bag m_Bag;
     Suitcase m_Suitcase;
     PlayerStats m_Stats;
+    FishingSet m_ActiveFishingSets[3];
 
 public:
     explicit Player();
@@ -47,6 +49,8 @@ public:
     PlayerStats* Stats();
 
     Suitcase* getSuitcase();
+
+    FishingSet* GetFishingSet(i32 a_No);
 };
 
 } // namespace game

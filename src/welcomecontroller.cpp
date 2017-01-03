@@ -1,15 +1,13 @@
 #include "game/Controller/welcomecontroller.hpp"
 
-game::WelcomeController::WelcomeController()
+game::WelcomeController::WelcomeController(QWidget *a_Parent)
 {
     this->m_View = new WelcomeView();
-    this->m_Model = new WelcomeModel(this->m_View);
-    this->m_View->setModel(this->m_Model);
+    this->m_View->setParent(a_Parent);
 }
 
 game::WelcomeController::~WelcomeController()
 {
-    delete this->m_Model;
     delete this->m_View;
 }
 
@@ -30,5 +28,5 @@ void game::WelcomeController::Show()
 
 void game::WelcomeController::Hide()
 {
-
+    this->m_View->hide();
 }

@@ -3,12 +3,6 @@
 
 #include <QWidget>
 
-#include "game/Model/welcomemodel.hpp"
-
-namespace Ui {
-class WelcomeView;
-}
-
 namespace game {
 
 class WelcomeView : public QWidget
@@ -19,10 +13,6 @@ public:
     explicit WelcomeView(QWidget *parent = 0);
     ~WelcomeView();
 
-    void setModel(WelcomeModel *Model);
-
-private:
-    WelcomeModel *m_Model;
 };
 
 } // namespace game
