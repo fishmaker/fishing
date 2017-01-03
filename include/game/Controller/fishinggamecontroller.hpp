@@ -1,0 +1,29 @@
+#ifndef FISHINGGAMECONTROLLER_H
+#define FISHINGGAMECONTROLLER_H
+
+#include <QObject>
+#include <QWidget>
+
+#include "game/Interfaces/iformbase.hpp"
+#include "game/View/fishinggameview.hpp"
+
+namespace game {
+
+class FishingGameController :  public QObject, public IFormBase
+{
+    Q_OBJECT
+
+public:
+    explicit FishingGameController(QWidget *a_Parent=0);
+    ~FishingGameController();
+
+    void Startup();
+    void Endup();
+
+private:
+    FishingGameView     *m_View;
+};
+
+} // namespace game
+
+#endif // FISHINGGAMECONTROLLER_H

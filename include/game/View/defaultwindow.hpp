@@ -2,7 +2,6 @@
 #define DEFAULTWINDOW_H
 
 #include <QWidget>
-#include <QVBoxLayout>
 
 namespace game {
 
@@ -14,10 +13,6 @@ public:
     DefaultWindow(QWidget *parent = 0);
     ~DefaultWindow();
 
-    QVBoxLayout* GetLayout();
-
-private:
-    QVBoxLayout m_Layout;
 };
 
 } // namespace game

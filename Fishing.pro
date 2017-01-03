@@ -46,10 +46,25 @@ SOURCES += main.cpp \
     src/globaldatabase.cpp \
     src/fishstructs.cpp \
     src/globalmodel.cpp \
-    src/mediator.cpp \
     src/fishingset.cpp \
     src/lobbyview.cpp \
-    src/defaultwindow.cpp
+    src/defaultwindow.cpp \
+    src/lobbycontroller.cpp \
+    src/selectplayerview.cpp \
+    src/createplayerview.cpp \
+    src/selectplaceview.cpp \
+    src/shopview.cpp \
+    src/travelview.cpp \
+    src/fishinggameview.cpp \
+    src/sellfishview.cpp \
+    src/selectplayercontroller.cpp \
+    src/createplayercontroller.cpp \
+    src/selectplacecontroller.cpp \
+    src/shopcontroller.cpp \
+    src/travelcontroller.cpp \
+    src/fishinggamecontroller.cpp \
+    src/sellfishcontroller.cpp \
+    src/mediator.cpp
 
 HEADERS  += \
     include/game/globalsettings.hpp \
@@ -87,10 +102,25 @@ HEADERS  += \
     include/game/World/location.hpp \
     include/game/World/place.hpp \
     include/game/Model/globalmodel.hpp \
-    include/game/mediator.hpp \
     include/game/Items/fishingset.hpp \
     include/game/View/lobbyview.hpp \
-    include/game/View/defaultwindow.hpp
+    include/game/View/defaultwindow.hpp \
+    include/game/Controller/lobbycontroller.hpp \
+    include/game/View/selectplayerview.hpp \
+    include/game/View/createplayerview.hpp \
+    include/game/View/selectplaceview.hpp \
+    include/game/View/shopview.hpp \
+    include/game/View/travelview.hpp \
+    include/game/View/fishinggameview.hpp \
+    include/game/View/sellfishview.hpp \
+    include/game/Controller/selectplayercontroller.hpp \
+    include/game/Controller/createplayercontroller.hpp \
+    include/game/Controller/selectplacecontroller.hpp \
+    include/game/Controller/shopcontroller.hpp \
+    include/game/Controller/travelcontroller.hpp \
+    include/game/Controller/fishinggamecontroller.hpp \
+    include/game/Controller/sellfishcontroller.hpp \
+    include/game/mediator.hpp
 
 INCLUDEPATH += include
 

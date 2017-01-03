@@ -10,8 +10,3 @@ game::DefaultWindow::~DefaultWindow()
 {
 
 }
-
-QVBoxLayout* game::DefaultWindow::GetLayout()
-{
-    return &this->m_Layout;
-}

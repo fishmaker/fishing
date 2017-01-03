@@ -1,25 +1,35 @@
 #ifndef WELCOMECONTROLLER_H
 #define WELCOMECONTROLLER_H
 
+#include <QObject>
 #include <QWidget>
+#include <QApplication>
 
 #include "game/Interfaces/iformbase.hpp"
 #include "game/View/welcomeview.hpp"
 
 namespace game {
 
-class WelcomeController : public IFormBase
+class WelcomeController :  public QObject, public IFormBase
 {
+    Q_OBJECT
+
 public:
     explicit WelcomeController(QWidget *a_Parent=0);
-    virtual ~WelcomeController();
+    ~WelcomeController();
 
     void Startup();
     void Endup();
 
-    void Show();
-    void Hide();
+signals:
+    void Sig_Key0_Clicked();
 
+private slots:
+    void OnKey0_Clicked();
+    void OnKey1_Clicked();
+    void OnKey2_Clicked();
+    void OnKey3_Clicked();
+    void OnKey4_Clicked();
 
 private:
     WelcomeView     *m_View;

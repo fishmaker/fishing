@@ -14,6 +14,10 @@ typedef enum : i32 {
     DM_1278,            // 1024 x 768 (4:3)
 } dimension_e;
 
+const QRect s_L1Dimensions = QRect(0, 0, 1000, 550);
+const QRect s_L2Dimensions = QRect(0, 0, 896, 504);
+const QRect s_L3Dimensions = QRect(0, 0, 300, 200);
+
 typedef struct {
     dimension_e     dimensions;
     bool            sound_bg;
