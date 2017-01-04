@@ -67,14 +67,11 @@ SOURCES += main.cpp \
     src/mediator.cpp
 
 HEADERS  += \
-    include/game/globalsettings.hpp \
     include/game/View/welcomeview.hpp \
     include/game/player.hpp \
-    include/game/bag.hpp \
     include/game/Controller/welcomecontroller.hpp \
     include/game/playerstats.hpp \
     include/game/fish.hpp \
-    include/game/suitcase.hpp \
     include/game/Exceptions/gameexception.hpp \
     include/game/Exceptions/fatalexception.hpp \
     include/game/Exceptions/badchoiceexception.hpp \
@@ -120,7 +117,10 @@ HEADERS  += \
     include/game/Controller/travelcontroller.hpp \
     include/game/Controller/fishinggamecontroller.hpp \
     include/game/Controller/sellfishcontroller.hpp \
-    include/game/mediator.hpp
+    include/game/mediator.hpp \
+    include/game/common/globalsettings.hpp \
+    include/game/Items/bag.hpp \
+    include/game/Items/suitcase.hpp
 
 INCLUDEPATH += include
 

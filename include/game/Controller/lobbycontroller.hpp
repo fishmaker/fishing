@@ -1,6 +1,7 @@
 #ifndef LOBBYCONTROLLER_H
 #define LOBBYCONTROLLER_H
 
+#include <QObject>
 #include <QWidget>
 
 #include "game/Interfaces/iformbase.hpp"

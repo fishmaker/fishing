@@ -5,6 +5,8 @@
 #include <QLabel>
 #include <QPushButton>
 
+#include "game/common/globalsettings.hpp"
+
 namespace game {
 
 class WelcomeView : public QWidget

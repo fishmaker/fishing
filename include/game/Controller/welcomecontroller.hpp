@@ -3,7 +3,6 @@
 
 #include <QObject>
 #include <QWidget>
-#include <QApplication>
 
 #include "game/Interfaces/iformbase.hpp"
 #include "game/View/welcomeview.hpp"

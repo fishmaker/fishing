@@ -6,6 +6,8 @@
 #include <QPushButton>
 #include <QLineEdit>
 
+#include "game/common/globalsettings.hpp"
+
 namespace game {
 
 class CreatePlayerView : public QWidget

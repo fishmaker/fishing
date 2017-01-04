@@ -1,18 +1,11 @@
 #ifndef MEDIATOR_H
 #define MEDIATOR_H
 
-#include <QtCore>
 #include <QObject>
-#include <QWidget>
 
 #include "game/player.hpp"
-#include "game/View/defaultwindow.hpp"
 #include "game/Interfaces/iformbase.hpp"
-#include "game/Controller/welcomecontroller.hpp"
-#include "game/Controller/lobbycontroller.hpp"
-#include "game/Controller/selectplayercontroller.hpp"
-#include "game/Controller/createplayercontroller.hpp"
-#include "game/Controller/selectplacecontroller.hpp"
+#include "game/View/defaultwindow.hpp"
 
 namespace game {
 
@@ -36,12 +29,7 @@ private:
     Player           *m_MainPlayer; // TODO: перенести в модель, а модель сюда
     formname_e       m_CurrentHolder; // Текущий вид на default форме
     DefaultWindow    *m_ParentWindow;
-
-    WelcomeController       *m_Welcome;
-    LobbyController         *m_Lobby;
-    SelectPlayerController  *m_SelectPlayer;
-    CreatePlayerController  *m_CreatePlayer;
-    SelectPlaceController   *m_SelectPlace;
+    QObject         *m_Forms[FN_BOUND];
 };
 
 } // namespace game

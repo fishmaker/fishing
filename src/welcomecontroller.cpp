@@ -1,5 +1,7 @@
 #include "game/Controller/welcomecontroller.hpp"
 
+#include <QApplication>
+
 game::WelcomeController::WelcomeController(QWidget *a_Parent)
 {
     this->m_View = new game::WelcomeView(a_Parent);

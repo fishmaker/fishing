@@ -2,9 +2,9 @@
 #define PLAYER_H
 
 #include "game/common/common.hpp"
-#include "game/bag.hpp"
 #include "game/playerstats.hpp"
-#include "game/suitcase.hpp"
+#include "game/Items/bag.hpp"
+#include "game/Items/suitcase.hpp"
 #include "game/Items/fishingset.hpp"
 
 namespace game {

@@ -3,7 +3,7 @@
 game::SelectPlaceView::SelectPlaceView(QWidget *a_Parent)
     : QWidget(a_Parent)
 {    
-    this->setGeometry(0, 0, 300, 200);
+    this->setGeometry(game::L2Dimensions);
 }
 
 game::SelectPlaceView::~SelectPlaceView()

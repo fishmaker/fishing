@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <QLabel>
 
+#include "game/common/globalsettings.hpp"
+
 namespace game {
 
 class LobbyView: public QWidget

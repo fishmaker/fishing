@@ -6,6 +6,8 @@
 #include <QPushButton>
 #include <QComboBox>
 
+#include "game/common/globalsettings.hpp"
+
 namespace game {
 
 class SelectPlayerView : public QWidget
@@ -17,11 +19,11 @@ public:
     QLabel  m_Labels[1];
     QPushButton m_Buttons[2];
 
+    void Setup();
+
 public:
     SelectPlayerView(QWidget *a_Parent = 0);
     ~SelectPlayerView();
-
-    void Setup();
 
 };
 

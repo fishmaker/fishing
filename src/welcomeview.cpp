@@ -3,7 +3,7 @@
 game::WelcomeView::WelcomeView(QWidget *parent) :
     QWidget(parent)
 {
-    this->setGeometry(0, 0, 896, 504); // TODO: from settings
+    this->setGeometry(game::L1Dimensions);
 }
 
 game::WelcomeView::~WelcomeView()

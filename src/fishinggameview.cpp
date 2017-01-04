@@ -3,7 +3,7 @@
 game::FishingGameView::FishingGameView(QWidget *a_Parent)
     :QWidget(a_Parent)
 {
-
+    this->setGeometry(game::L1Dimensions);
 }
 
 game::FishingGameView::~FishingGameView()

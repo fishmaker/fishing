@@ -6,6 +6,8 @@
 #include <QPushButton>
 #include <QImage>
 
+#include "game/common/globalsettings.hpp"
+
 namespace game {
 
 class SellFishView : public QWidget

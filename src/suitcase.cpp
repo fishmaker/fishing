@@ -1,4 +1,4 @@
-#include "game/suitcase.hpp"
+#include "game/Items/suitcase.hpp"
 
 game::Suitcase::Suitcase()
 {

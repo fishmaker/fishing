@@ -3,7 +3,7 @@
 game::ShopView::ShopView(QWidget *a_Parent)
     :QWidget(a_Parent)
 {
-
+    this->setGeometry(game::L2Dimensions);
 }
 
 game::ShopView::~ShopView()

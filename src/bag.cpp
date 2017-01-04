@@ -1,4 +1,4 @@
-#include "include/game/bag.hpp"
+#include "game/Items/bag.hpp"
 
 game::Bag::Bag()
 {

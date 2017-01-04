@@ -3,7 +3,7 @@
 game::LobbyView::LobbyView(QWidget *parent)
     : QWidget(parent)
 {
-    this->setGeometry(0, 0, 1000, 550);
+    this->setGeometry(game::L1Dimensions);
 }
 
 game::LobbyView::~LobbyView()
