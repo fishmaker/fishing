@@ -4,6 +4,9 @@ game::LobbyView::LobbyView(QWidget *parent)
     : QWidget(parent)
 {
     this->setGeometry(game::L1Dimensions);
+    this->m_Palette.setBrush(QPalette::Background, QBrush(QImage(":/data/images/f10001.jpg")));
+    this->setAutoFillBackground(true);
+    this->setPalette(this->m_Palette);
 }
 
 game::LobbyView::~LobbyView()

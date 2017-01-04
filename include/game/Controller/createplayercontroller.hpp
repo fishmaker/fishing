@@ -13,6 +13,12 @@ class CreatePlayerController  :  public QObject, public IFormBase
 {
     Q_OBJECT
 
+signals:
+    void Sig_Key0_Clicked();
+
+public slots:
+    void OnKey0_Clicked();
+
 public:
     explicit CreatePlayerController(QWidget *a_Parent =0);
     ~CreatePlayerController();

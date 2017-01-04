@@ -15,9 +15,6 @@
 
 game::Mediator::Mediator()
 {
-    // User setup
-    this->m_MainPlayer = new Player();
-
     // Default Window Setup
     this->m_ParentWindow = new game::DefaultWindow();
     this->m_ParentWindow->setGeometry(QStyle::alignedRect(Qt::LeftToRight, Qt::AlignCenter, game::szL1Dimensions, qApp->desktop()->availableGeometry()));
@@ -34,11 +31,12 @@ game::Mediator::Mediator()
 
     // QObject::connect()
     QObject::connect(this->m_Forms[FN_WELCOME], SIGNAL(Sig_Key0_Clicked()), this, SLOT(OnWelcomeKey0_Clicked()));
+    QObject::connect(this->m_Forms[FN_SELECTPLAYER], SIGNAL(Sig_Key0_Clicked()), this, SLOT(OnSelectPlayerKey0_Clicked()));
+    QObject::connect(this->m_Forms[FN_SELECTPLAYER], SIGNAL(Sig_Key1_Clicked()), this, SLOT(OnSelectPlayerKey1_Clicked()));
 }
 
 game::Mediator::~Mediator()
 {
-    delete this->m_MainPlayer;
     delete this->m_Forms[FN_SELECTPLAYER];
     delete this->m_Forms[FN_CREATENEW];
     delete this->m_Forms[FN_SELECTPLACE];
@@ -52,13 +50,24 @@ void game::Mediator::OnWelcomeKey0_Clicked()
     dynamic_cast<IFormBase*>(this->m_Forms[FN_SELECTPLAYER])->Startup();
 }
 
-void game::Mediator::Start()
+void game::Mediator::OnSelectPlayerKey0_Clicked()
 {
-    this->m_CurrentHolder = FN_WELCOME;
-    dynamic_cast<IFormBase*>(this->m_Forms[FN_WELCOME])->Startup();
+    // TODO: check correctness
+    // TODO: check file corrupt
+    // TODO: read player
+    // TODO: throw exceptions
+    dynamic_cast<IFormBase*>(this->m_Forms[FN_LOBBY])->Startup();
+    dynamic_cast<IFormBase*>(this->m_Forms[FN_SELECTPLAYER])->Endup();
+    dynamic_cast<IFormBase*>(this->m_Forms[FN_WELCOME])->Endup();
 }
 
-game::Player* game::Mediator::GetPlayer()
+void game::Mediator::OnSelectPlayerKey1_Clicked()
 {
-    return m_MainPlayer;
+    dynamic_cast<IFormBase*>(this->m_Forms[FN_CREATENEW])->Startup();
+    dynamic_cast<IFormBase*>(this->m_Forms[FN_SELECTPLAYER])->Endup();
+}
+
+void game::Mediator::Start()
+{
+    dynamic_cast<IFormBase*>(this->m_Forms[FN_WELCOME])->Startup();
 }

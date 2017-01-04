@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QLabel>
 #include <QPushButton>
+#include <QPalette>
 
 #include "game/common/globalsettings.hpp"
 
@@ -19,10 +20,12 @@ public:
     QPushButton m_PushButtons[5];
     QLabel m_Labels[1];
 
-
 public:
     explicit WelcomeView(QWidget *parent = 0);
     ~WelcomeView();
+
+private:
+    QPalette m_Palette;
 };
 
 } // namespace game

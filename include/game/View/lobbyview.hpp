@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QLabel>
+#include <QPalette>
 
 #include "game/common/globalsettings.hpp"
 
@@ -20,6 +21,9 @@ public:
 
     LobbyView(QWidget *parent = 0);
     ~LobbyView();
+
+private:
+    QPalette m_Palette;
 };
 
 } // namespace game

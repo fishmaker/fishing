@@ -1,11 +1,14 @@
 #include "game/View/selectplayerview.hpp"
 
+#include <QStyle>
+#include <QApplication>
+#include <QDesktopWidget>
+
 game::SelectPlayerView::SelectPlayerView(QWidget *a_Parent)
     : QWidget(a_Parent)
 {
-    this->setGeometry(game::L3Dimensions);
+    this->setGeometry(QStyle::alignedRect(Qt::LeftToRight, Qt::AlignCenter, game::szL3Dimensions, qApp->desktop()->availableGeometry()));
     this->setWindowModality(Qt::ApplicationModal);
-    this->hide();
 }
 
 game::SelectPlayerView::~SelectPlayerView()

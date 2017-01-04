@@ -20,6 +20,14 @@ public:
     void Startup();
     void Endup();
 
+signals:
+    void Sig_Key0_Clicked();
+    void Sig_Key1_Clicked();
+
+public slots:
+    void OnKey0_Clicked();
+    void OnKey1_Clicked();
+
 private:
     SelectPlayerView        *m_View;
 };
