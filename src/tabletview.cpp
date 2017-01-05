@@ -1,4 +1,4 @@
-#include "include/game/View/tabletview.hpp"
+#include "game/View/tabletview.hpp"
 
 TabletView::TabletView()
 {

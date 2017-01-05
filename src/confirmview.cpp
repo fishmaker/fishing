@@ -1,4 +1,4 @@
-#include "include/game/View/confirmview.hpp"
+#include "game/View/confirmview.hpp"
 
 ConfirmView::ConfirmView()
 {

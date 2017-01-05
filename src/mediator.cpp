@@ -12,6 +12,7 @@
 #include "game/Controller/selectplayercontroller.hpp"
 #include "game/Controller/createplayercontroller.hpp"
 #include "game/Controller/selectplacecontroller.hpp"
+#include "game/Controller/fishinggamecontroller.hpp"
 
 game::Mediator::Mediator()
 {
@@ -28,11 +29,19 @@ game::Mediator::Mediator()
     this->m_Forms[FN_SELECTPLAYER] = new game::SelectPlayerController();
     this->m_Forms[FN_CREATENEW] = new game::CreatePlayerController();
     this->m_Forms[FN_SELECTPLACE] = new game::SelectPlaceController();
+    this->m_Forms[FN_FISHINGGAME] = new game::FishingGameController(this->m_ParentWindow);
 
     // QObject::connect()
     QObject::connect(this->m_Forms[FN_WELCOME], SIGNAL(Sig_Key0_Clicked()), this, SLOT(OnWelcomeKey0_Clicked()));
     QObject::connect(this->m_Forms[FN_SELECTPLAYER], SIGNAL(Sig_Key0_Clicked()), this, SLOT(OnSelectPlayerKey0_Clicked()));
     QObject::connect(this->m_Forms[FN_SELECTPLAYER], SIGNAL(Sig_Key1_Clicked()), this, SLOT(OnSelectPlayerKey1_Clicked()));
+    QObject::connect(this->m_Forms[FN_LOBBY], SIGNAL(Sig_Key0_Clicked()), this, SLOT(OnLobbyKey0_Clicked()));
+    QObject::connect(this->m_Forms[FN_LOBBY], SIGNAL(Sig_Key1_Clicked()), this, SLOT(OnLobbyKey1_Clicked()));
+    QObject::connect(this->m_Forms[FN_LOBBY], SIGNAL(Sig_Key2_Clicked()), this, SLOT(OnLobbyKey2_Clicked()));
+    QObject::connect(this->m_Forms[FN_LOBBY], SIGNAL(Sig_Key3_Clicked()), this, SLOT(OnLobbyKey3_Clicked()));
+    QObject::connect(this->m_Forms[FN_LOBBY], SIGNAL(Sig_Key4_Clicked()), this, SLOT(OnLobbyKey4_Clicked()));
+    QObject::connect(this->m_Forms[FN_LOBBY], SIGNAL(Sig_Key5_Clicked()), this, SLOT(OnLobbyKey5_Clicked()));
+    QObject::connect(this->m_Forms[FN_LOBBY], SIGNAL(Sig_Key6_Clicked()), this, SLOT(OnLobbyKey6_Clicked()));
 }
 
 game::Mediator::~Mediator()
@@ -70,4 +79,41 @@ void game::Mediator::OnSelectPlayerKey1_Clicked()
 void game::Mediator::Start()
 {
     dynamic_cast<IFormBase*>(this->m_Forms[FN_WELCOME])->Startup();
+}
+
+void game::Mediator::OnLobbyKey0_Clicked()
+{
+    dynamic_cast<IFormBase*>(this->m_Forms[FN_SELECTPLACE])->Startup();
+}
+
+void game::Mediator::OnLobbyKey1_Clicked()
+{
+    // TODO: DEBUG - remove it
+    dynamic_cast<IFormBase*>(this->m_Forms[FN_LOBBY])->Endup();
+    dynamic_cast<IFormBase*>(this->m_Forms[FN_FISHINGGAME])->Startup();
+}
+
+void game::Mediator::OnLobbyKey2_Clicked()
+{
+
+}
+
+void game::Mediator::OnLobbyKey3_Clicked()
+{
+
+}
+
+void game::Mediator::OnLobbyKey4_Clicked()
+{
+
+}
+
+void game::Mediator::OnLobbyKey5_Clicked()
+{
+
+}
+
+void game::Mediator::OnLobbyKey6_Clicked()
+{
+    QApplication::quit();
 }

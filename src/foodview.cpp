@@ -1,6 +1,17 @@
-#include "include/game/View/foodview.hpp"
+#include "game/View/foodview.hpp"
 
-FoodView::FoodView()
+game::FoodView::FoodView(QWidget *a_Parent)
+    : QWidget(a_Parent)
+{
+
+}
+
+game::FoodView::~FoodView()
+{
+
+}
+
+void game::FoodView::Setup()
 {
 
 }

@@ -64,7 +64,27 @@ SOURCES += main.cpp \
     src/travelcontroller.cpp \
     src/fishinggamecontroller.cpp \
     src/sellfishcontroller.cpp \
-    src/mediator.cpp
+    src/mediator.cpp \
+    src/selectfkview.cpp \
+    src/foodview.cpp \
+    src/itemsview.cpp \
+    src/suitkitview.cpp \
+    src/settingsview.cpp \
+    src/warningview.cpp \
+    src/errorview.cpp \
+    src/confirmview.cpp \
+    src/newsview.cpp \
+    src/blackmarketview.cpp \
+    src/bankview.cpp \
+    src/hotelview.cpp \
+    src/questsview.cpp \
+    src/eventview.cpp \
+    src/tournamentview.cpp \
+    src/playersinfoview.cpp \
+    src/fishpondview.cpp \
+    src/fishactionsview.cpp \
+    src/prohibitionview.cpp \
+    src/tabletview.cpp
 
 HEADERS  += \
     include/game/View/welcomeview.hpp \
@@ -120,7 +140,27 @@ HEADERS  += \
     include/game/mediator.hpp \
     include/game/common/globalsettings.hpp \
     include/game/Items/bag.hpp \
-    include/game/Items/suitcase.hpp
+    include/game/Items/suitcase.hpp \
+    include/game/View/selectfkview.hpp \
+    include/game/View/foodview.hpp \
+    include/game/View/itemsview.hpp \
+    include/game/View/suitkitview.hpp \
+    include/game/View/settingsview.hpp \
+    include/game/View/warningview.hpp \
+    include/game/View/errorview.hpp \
+    include/game/View/confirmview.hpp \
+    include/game/View/newsview.hpp \
+    include/game/View/blackmarketview.hpp \
+    include/game/View/bankview.hpp \
+    include/game/View/hotelview.hpp \
+    include/game/View/questsview.hpp \
+    include/game/View/eventview.hpp \
+    include/game/View/tournamentview.hpp \
+    include/game/View/playersinfoview.hpp \
+    include/game/View/fishpondview.hpp \
+    include/game/View/fishactionsview.hpp \
+    include/game/View/prohibitionview.hpp \
+    include/game/View/tabletview.hpp
 
 INCLUDEPATH += include
 

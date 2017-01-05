@@ -1,9 +1,14 @@
 #include "game/View/selectplaceview.hpp"
 
+#include <QStyle>
+#include <QApplication>
+#include <QDesktopWidget>
+
 game::SelectPlaceView::SelectPlaceView(QWidget *a_Parent)
     : QWidget(a_Parent)
-{    
-    this->setGeometry(game::L2Dimensions);
+{
+    this->setGeometry(QStyle::alignedRect(Qt::LeftToRight, Qt::AlignCenter, game::szL2Dimensions, qApp->desktop()->availableGeometry()));
+    this->setWindowTitle(QString("Select Fishing Place"));
 }
 
 game::SelectPlaceView::~SelectPlaceView()
@@ -48,5 +53,4 @@ void game::SelectPlaceView::Setup()
     this->m_Labels[5].setText(QString("O"));
     this->m_Labels[5].setParent(this);
     this->m_Labels[5].show();
-
 }

@@ -1,6 +1,17 @@
-#include "include/game/View/suitkitview.hpp"
+#include "game/View/suitkitview.hpp"
 
-SuitkitView::SuitkitView()
+game::SuitkitView::SuitkitView(QWidget *a_Parent)
+    : QWidget(a_Parent)
+{
+
+}
+
+game::SuitkitView::~SuitkitView()
+{
+
+}
+
+void game::SuitkitView::Setup()
 {
 
 }

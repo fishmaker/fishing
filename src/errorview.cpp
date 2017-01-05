@@ -1,4 +1,4 @@
-#include "include/game/View/errorview.hpp"
+#include "game/View/errorview.hpp"
 
 ErrorView::ErrorView()
 {

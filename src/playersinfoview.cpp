@@ -1,4 +1,4 @@
-#include "include/game/View/playersinfoview.hpp"
+#include "game/View/playersinfoview.hpp"
 
 PlayersInfoView::PlayersInfoView()
 {

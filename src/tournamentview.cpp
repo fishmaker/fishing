@@ -1,4 +1,4 @@
-#include "include/game/View/tournamentview.hpp"
+#include "game/View/tournamentview.hpp"
 
 TournamentView::TournamentView()
 {

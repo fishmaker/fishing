@@ -1,4 +1,4 @@
-#include "include/game/View/settingsview.hpp"
+#include "game/View/settingsview.hpp"
 
 SettingsView::SettingsView()
 {

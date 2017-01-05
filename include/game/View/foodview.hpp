@@ -1,11 +1,22 @@
 #ifndef FOODVIEW_H
 #define FOODVIEW_H
 
+#include <QWidget>
 
-class FoodView
+namespace game {
+
+class FoodView : public QWidget
 {
+    Q_OBJECT
+
 public:
-    FoodView();
+    void Setup();
+
+public:
+    explicit FoodView(QWidget *a_Parent =0);
+    ~FoodView();
 };
+
+} // namespace game
 
 #endif // FOODVIEW_H

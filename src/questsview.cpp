@@ -1,4 +1,4 @@
-#include "include/game/View/questsview.hpp"
+#include "game/View/questsview.hpp"
 
 QuestsView::QuestsView()
 {

@@ -1,4 +1,4 @@
-#include "include/game/View/warningview.hpp"
+#include "game/View/warningview.hpp"
 
 WarningView::WarningView()
 {

@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QLabel>
+#include <QPushButton>
 #include <QPalette>
 
 #include "game/common/globalsettings.hpp"
@@ -15,6 +16,7 @@ class LobbyView: public QWidget
 
 public:
     QLabel m_Labels[10];
+    QPushButton m_Buttons[10];
 
 public:
     void Setup();

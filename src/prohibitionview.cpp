@@ -1,4 +1,4 @@
-#include "include/game/View/prohibitionview.hpp"
+#include "game/View/prohibitionview.hpp"
 
 ProhibitionView::ProhibitionView()
 {

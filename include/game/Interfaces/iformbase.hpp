@@ -11,6 +11,13 @@ typedef enum : i32 {
     FN_SELECTPLAYER,
     FN_CREATENEW,
     FN_SELECTPLACE,
+    FN_SHOP,
+    FN_TRAVEL,
+    FN_FISHINGGAME,
+    FN_SELLFISH,
+    FN_FISHINGKIT,
+    FN_FOOD,
+    FN_ITEMS,
     // TODO: another windows
     FN_BOUND        // always last!
 } formname_e;

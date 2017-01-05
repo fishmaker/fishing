@@ -1,6 +1,17 @@
-#include "include/game/View/itemsview.hpp"
+#include "game/View/itemsview.hpp"
 
-ItemsView::ItemsView()
+void game::ItemsView::Setup()
+{
+
+}
+
+game::ItemsView::ItemsView(QWidget *parent)
+    :QWidget(parent)
+{
+
+}
+
+game::ItemsView::~ItemsView()
 {
 
 }

@@ -1,4 +1,4 @@
-#include "include/game/View/fishactionsview.hpp"
+#include "game/View/fishactionsview.hpp"
 
 FishActionsView::FishActionsView()
 {

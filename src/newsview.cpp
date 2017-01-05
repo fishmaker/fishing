@@ -1,4 +1,4 @@
-#include "include/game/View/newsview.hpp"
+#include "game/View/newsview.hpp"
 
 NewsView::NewsView()
 {
