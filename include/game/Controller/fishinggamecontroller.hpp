@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QWidget>
+#include <QTimer>
 
 #include "game/Interfaces/iformbase.hpp"
 #include "game/View/fishinggameview.hpp"
@@ -21,7 +22,11 @@ public:
     void Startup();
     void Endup();
 
+
+
 private:
+    QTimer  m_Timer;        // Таймер клавиатуры
+
     FishingGameView     *m_View;
     FishingGameModel    *m_Model;
 };

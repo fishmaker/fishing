@@ -1,6 +1,7 @@
 #ifndef FISHINGGAMEVIEW_H
 #define FISHINGGAMEVIEW_H
 
+#include <QMap>
 #include <QWidget>
 #include <QLabel>
 #include <QPushButton>
@@ -9,9 +10,11 @@
 #include <QProgressBar>
 #include <QSlider>
 #include <QCheckBox>
+#include <QKeyEvent>
 // TODO: poplavok + udiliwe
 
 #include "game/common/globalsettings.hpp"
+#include "game/Items/fishingset.hpp"
 
 namespace game {
 
@@ -26,6 +29,20 @@ public:
     QPushButton m_Buttons[10];
     QSlider m_Slider[1];
     QCheckBox m_CheckBox[1];
+
+    QMap<i32, bool> m_Keys;
+
+
+signals:
+    void Sig_Rod_Thrown(FishingSet*);
+
+public slots:
+
+private:
+    void keyPressEvent(QKeyEvent *a_Event);
+    void keyReleaseEvent(QKeyEvent *a_Event);
+
+
 
 public:
     void Setup();

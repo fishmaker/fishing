@@ -1,6 +1,12 @@
 #include "game/Model/fishinggamemodel.hpp"
 
-FishingGameModel::FishingGameModel()
+
+game::FishingGameModel::FishingGameModel()
+{
+
+}
+
+game::FishingGameModel::~FishingGameModel()
 {
 
 }

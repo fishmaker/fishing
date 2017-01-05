@@ -8,14 +8,14 @@
 
 #include "game/common/common.hpp"
 #include "game/common/catchtypes.hpp"
-#include "game/fish.hpp"
+#include "game/Interfaces/ibasiccatch.hpp"
 
 namespace game {
 
 class GlobalDatabase
 {
     // [ID] <-> fish prototype
-    std::map<i32, Fish*> m_mFishes;
+    std::map<i32, IBasicCatch*> m_mFishes;
     // items map
 
 

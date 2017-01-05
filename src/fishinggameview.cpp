@@ -11,6 +11,27 @@ game::FishingGameView::~FishingGameView()
 
 }
 
+void game::FishingGameView::keyPressEvent(QKeyEvent *a_Event)
+{
+    this->m_Keys[a_Event->key()] = true;
+    QWidget::keyPressEvent(a_Event);
+}
+
+void game::FishingGameView::keyReleaseEvent(QKeyEvent *a_Event)
+{
+    i32 m_CurrentKey = a_Event->key();
+    switch (m_CurrentKey) {
+        case Qt::Key_H:
+        case Qt::Key_G:
+        this->m_Keys[a_Event->key()] = false;
+        break;
+    }
+
+    // TODO: else -> signal() or call function
+
+    QWidget::keyReleaseEvent(a_Event);
+}
+
 void game::FishingGameView::Setup()
 {
     // Игровое окно
