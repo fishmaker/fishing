@@ -45,7 +45,6 @@ SOURCES += main.cpp \
     src/spoon.cpp \
     src/globaldatabase.cpp \
     src/fishstructs.cpp \
-    src/globalmodel.cpp \
     src/fishingset.cpp \
     src/lobbyview.cpp \
     src/defaultwindow.cpp \
@@ -84,7 +83,8 @@ SOURCES += main.cpp \
     src/fishpondview.cpp \
     src/fishactionsview.cpp \
     src/prohibitionview.cpp \
-    src/tabletview.cpp
+    src/tabletview.cpp \
+    src/fishinggamemodel.cpp
 
 HEADERS  += \
     include/game/View/welcomeview.hpp \
@@ -118,7 +118,6 @@ HEADERS  += \
     include/game/World/gameworld.hpp \
     include/game/World/location.hpp \
     include/game/World/place.hpp \
-    include/game/Model/globalmodel.hpp \
     include/game/Items/fishingset.hpp \
     include/game/View/lobbyview.hpp \
     include/game/View/defaultwindow.hpp \
@@ -160,7 +159,8 @@ HEADERS  += \
     include/game/View/fishpondview.hpp \
     include/game/View/fishactionsview.hpp \
     include/game/View/prohibitionview.hpp \
-    include/game/View/tabletview.hpp
+    include/game/View/tabletview.hpp \
+    include/game/Model/fishinggamemodel.hpp
 
 INCLUDEPATH += include
 

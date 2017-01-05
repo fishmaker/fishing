@@ -2,7 +2,8 @@
 
 game::FishingGameController::FishingGameController(QWidget *a_Parent)
 {
-    this->m_View = new FishingGameView(a_Parent);
+    this->m_Model = new game::FishingGameModel();
+    this->m_View = new game::FishingGameView(a_Parent);
     this->m_View->Setup();
 }
 

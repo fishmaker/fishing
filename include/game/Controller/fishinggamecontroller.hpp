@@ -6,6 +6,7 @@
 
 #include "game/Interfaces/iformbase.hpp"
 #include "game/View/fishinggameview.hpp"
+#include "game/Model/fishinggamemodel.hpp"
 
 namespace game {
 
@@ -22,6 +23,7 @@ public:
 
 private:
     FishingGameView     *m_View;
+    FishingGameModel    *m_Model;
 };
 
 } // namespace game
