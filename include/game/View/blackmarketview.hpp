@@ -1,11 +1,22 @@
 #ifndef BLACKMARKETVIEW_H
 #define BLACKMARKETVIEW_H
 
+#include <QWidget>
 
-class BlackMarketView
+namespace game {
+
+class BlackMarketView : public QWidget
 {
+    Q_OBJECT
+
 public:
-    BlackMarketView();
+    void Setup();
+
+public:
+    explicit BlackMarketView(QWidget *a_Parent =0);
+    ~BlackMarketView();
 };
+
+} // namespace game
 
 #endif // BLACKMARKETVIEW_H

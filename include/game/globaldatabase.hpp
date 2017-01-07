@@ -9,11 +9,16 @@
 #include "game/common/common.hpp"
 #include "game/common/catchtypes.hpp"
 #include "game/Interfaces/ibasiccatch.hpp"
+#include "game/World/gameworld.hpp"
 
 namespace game {
 
 class GlobalDatabase
 {
+
+public:
+    GameWorld m_GameWorld;
+
     // [ID] <-> fish prototype
     std::map<i32, IBasicCatch*> m_mFishes;
     // items map
@@ -24,9 +29,6 @@ public:
     virtual ~GlobalDatabase();
 
     // TODO: loader from file + parser + writer
-
-private:
-
 };
 
 } // namespace game

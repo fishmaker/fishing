@@ -1,4 +1,4 @@
-#include "game/bait.hpp"
+#include "game/Items/bait.hpp"
 
 game::Bait::Bait()
 {

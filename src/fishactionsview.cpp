@@ -1,6 +1,17 @@
 #include "game/View/fishactionsview.hpp"
 
-FishActionsView::FishActionsView()
+game::FishActionsView::FishActionsView(QWidget *a_Parent)
+    : QWidget(a_Parent)
+{
+
+}
+
+game::FishActionsView::~FishActionsView()
+{
+
+}
+
+void game::FishActionsView::Setup()
 {
 
 }

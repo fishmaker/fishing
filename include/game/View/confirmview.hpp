@@ -1,11 +1,22 @@
 #ifndef CONFIRMVIEW_H
 #define CONFIRMVIEW_H
 
+#include <QWidget>
 
-class ConfirmView
+namespace game {
+
+class ConfirmView : public QWidget
 {
+    Q_OBJECT
+
 public:
-    ConfirmView();
+    void Setup();
+
+public:
+    explicit ConfirmView(QWidget *a_Parent =0);
+    ~ConfirmView();
 };
+
+} // namespace game
 
 #endif // CONFIRMVIEW_H

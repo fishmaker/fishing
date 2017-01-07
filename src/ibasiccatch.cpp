@@ -1,4 +1,4 @@
-#include "game/ibasiccatch.hpp"
+#include "game/Interfaces/ibasiccatch.hpp"
 
 game::IBasicCatch::IBasicCatch()
 {

@@ -70,9 +70,44 @@ void game::Location::setHouseCost(const game::r64 &HouseCost)
     m_HouseCost = HouseCost;
 }
 
+void game::Location::p_SetName(LString& a_Data)
+{
+    this->m_Name = a_Data;
+}
+
+void game::Location::p_SetMinRank(LString& a_Data)
+{
+    this->m_MinRank = static_cast<u32>(std::stoi(a_Data));  // TODO: care of overflow
+}
+
+void game::Location::p_SetDayCost(LString& a_Data)
+{
+    this->m_DayCost = std::stod(a_Data);
+}
+
+void game::Location::p_SetFlyCost(LString& a_Data)
+{
+    this->m_FlyCost = std::stod(a_Data);
+}
+
+void game::Location::p_TrainCost(LString& a_Data)
+{
+    this->m_TrainCost = std::stod(a_Data);
+}
+
+void game::Location::p_HouseCost(LString& a_Data)
+{
+    this->m_HouseCost = std::stod(a_Data);
+}
+
 game::Location::Location()
 {
-    
+    this->m_mInitializer["Name"]        = std::bind(&Location::p_SetName, this, std::placeholders::_1);
+    this->m_mInitializer["MinRank"]     = std::bind(&Location::p_SetMinRank, this, std::placeholders::_1);
+    this->m_mInitializer["DayCost"]     = std::bind(&Location::p_SetDayCost, this, std::placeholders::_1);
+    this->m_mInitializer["FlyCost"]     = std::bind(&Location::p_SetFlyCost, this, std::placeholders::_1);
+    this->m_mInitializer["TrainCost"]   = std::bind(&Location::p_TrainCost, this, std::placeholders::_1);
+    this->m_mInitializer["HouseCost"]   = std::bind(&Location::p_HouseCost, this, std::placeholders::_1);
 }
 
 game::Location::~Location()

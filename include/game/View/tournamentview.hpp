@@ -1,11 +1,22 @@
 #ifndef TOURNAMENTVIEW_H
 #define TOURNAMENTVIEW_H
 
+#include <QWidget>
 
-class TournamentView
+namespace game {
+
+class TournamentView : public QWidget
 {
+    Q_OBJECT
+
 public:
-    TournamentView();
+    void Setup();
+
+public:
+    explicit TournamentView(QWidget *a_Parent =0);
+    ~TournamentView();
 };
+
+} // namespace game
 
 #endif // TOURNAMENTVIEW_H

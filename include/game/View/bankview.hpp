@@ -1,11 +1,23 @@
 #ifndef BANKVIEW_H
 #define BANKVIEW_H
 
+#include <QWidget>
 
-class BankView
+namespace game {
+
+class BankView : public QWidget
 {
+    Q_OBJECT
+
 public:
-    BankView();
+    void Setup();
+
+public:
+    explicit BankView(QWidget *a_Parent =0);
+    ~BankView();
 };
 
+} // namespace game
+
 #endif // BANKVIEW_H
+

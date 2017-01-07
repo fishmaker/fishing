@@ -1,6 +1,17 @@
 #include "game/View/bankview.hpp"
 
-BankView::BankView()
+game::BankView::BankView(QWidget *a_Parent)
+    : QWidget(a_Parent)
+{
+
+}
+
+game::BankView::~BankView()
+{
+
+}
+
+void game::BankView::Setup()
 {
 
 }

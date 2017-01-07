@@ -1,6 +1,17 @@
 #include "game/View/settingsview.hpp"
 
-SettingsView::SettingsView()
+game::SettingsView::SettingsView(QWidget *a_Parent)
+    : QWidget(a_Parent)
+{
+
+}
+
+game::SettingsView::~SettingsView()
+{
+
+}
+
+void game::SettingsView::Setup()
 {
 
 }

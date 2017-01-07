@@ -20,7 +20,7 @@ typedef double                  r64;
 typedef long double             r80;
 
 using LString                   = std::string;
-using UString                   = std::wstring;
+using UString                   = std::string; // TODO: if test fails -> std::wstring
 
 } // namespace game
 

@@ -1,4 +1,4 @@
-#include "game/hook.hpp"
+#include "game/Items/hook.hpp"
 
 game::hookstrength_e game::Hook::Strength() const
 {

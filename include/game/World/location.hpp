@@ -2,22 +2,27 @@
 #define LOCATION_H
 
 #include <vector>
+#include <map>
+#include <functional>
 
 #include "game/common/common.hpp"
 #include "game/World/place.hpp"
 
 namespace game {
 
+using func = std::function<void(LString&)>;
+
 class Location
 {
-    UString m_Name;             // (7000)
+    UString m_Name;
     // TODO: Shop
-    u32 m_MinRank;              // (3000)
-    r64 m_DayCost;              // (6000)
-    r64 m_FlyCost;              // (6001)
-    r64 m_TrainCost;            // (6002)
-    r64 m_HouseCost;            // (6003)
+    u32 m_MinRank;
+    r64 m_DayCost;
+    r64 m_FlyCost;
+    r64 m_TrainCost;
+    r64 m_HouseCost;
     std::vector<Place> m_vSeats;
+    std::map<std::string, func> m_mInitializer;
 
 public:
     explicit Location();
@@ -43,6 +48,14 @@ public:
 
     r64 HouseCost() const;
     void setHouseCost(const r64 &HouseCost);
+
+private:
+    void p_SetName(LString&);
+    void p_SetMinRank(LString&);
+    void p_SetDayCost(LString&);
+    void p_SetFlyCost(LString&);
+    void p_TrainCost(LString&);
+    void p_HouseCost(LString&);
 };
 
 } // namespace game

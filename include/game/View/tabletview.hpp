@@ -1,11 +1,22 @@
 #ifndef TABLETVIEW_H
 #define TABLETVIEW_H
 
+#include <QWidget>
 
-class TabletView
+namespace game {
+
+class TabletView : public QWidget
 {
+    Q_OBJECT
+
 public:
-    TabletView();
+    void Setup();
+
+public:
+    explicit TabletView(QWidget *a_Parent =0);
+    ~TabletView();
 };
+
+} // namespace game
 
 #endif // TABLETVIEW_H

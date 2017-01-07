@@ -1,4 +1,4 @@
-#include "game/gameworld.hpp"
+#include "game/World/gameworld.hpp"
 
 game::GameWorld::GameWorld()
 {

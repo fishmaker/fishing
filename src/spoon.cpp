@@ -1,4 +1,4 @@
-#include "game/spoon.hpp"
+#include "game/Items/spoon.hpp"
 
 game::Spoon::Spoon()
 {

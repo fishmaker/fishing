@@ -44,7 +44,6 @@ SOURCES += main.cpp \
     src/hook.cpp \
     src/spoon.cpp \
     src/globaldatabase.cpp \
-    src/fishstructs.cpp \
     src/fishingset.cpp \
     src/lobbyview.cpp \
     src/defaultwindow.cpp \
@@ -84,7 +83,27 @@ SOURCES += main.cpp \
     src/fishactionsview.cpp \
     src/prohibitionview.cpp \
     src/tabletview.cpp \
-    src/fishinggamemodel.cpp
+    src/fishinggamemodel.cpp \
+    src/selectfkcontroller.cpp \
+    src/foodcontroller.cpp \
+    src/itemscontroller.cpp \
+    src/settingscontroller.cpp \
+    src/warningcontroller.cpp \
+    src/errorcontroller.cpp \
+    src/confirmcontroller.cpp \
+    src/newscontroller.cpp \
+    src/blackmarketcontroller.cpp \
+    src/bankcontroller.cpp \
+    src/hotelcontroller.cpp \
+    src/questscontroller.cpp \
+    src/eventscontroller.cpp \
+    src/tournamentcontroller.cpp \
+    src/playersinfocontroller.cpp \
+    src/fishpondcontroller.cpp \
+    src/fishactionscontroller.cpp \
+    src/prohibitioncontroller.cpp \
+    src/tabletcontroller.cpp \
+    src/suitkitcontroller.cpp
 
 HEADERS  += \
     include/game/View/welcomeview.hpp \
@@ -160,7 +179,27 @@ HEADERS  += \
     include/game/View/fishactionsview.hpp \
     include/game/View/prohibitionview.hpp \
     include/game/View/tabletview.hpp \
-    include/game/Model/fishinggamemodel.hpp
+    include/game/Model/fishinggamemodel.hpp \
+    include/game/Controller/selectfkcontroller.hpp \
+    include/game/Controller/foodcontroller.hpp \
+    include/game/Controller/itemscontroller.hpp \
+    include/game/Controller/settingscontroller.hpp \
+    include/game/Controller/warningcontroller.hpp \
+    include/game/Controller/errorcontroller.hpp \
+    include/game/Controller/confirmcontroller.hpp \
+    include/game/Controller/newscontroller.hpp \
+    include/game/Controller/blackmarketcontroller.hpp \
+    include/game/Controller/bankcontroller.hpp \
+    include/game/Controller/hotelcontroller.hpp \
+    include/game/Controller/questscontroller.hpp \
+    include/game/Controller/eventscontroller.hpp \
+    include/game/Controller/tournamentcontroller.hpp \
+    include/game/Controller/playersinfocontroller.hpp \
+    include/game/Controller/fishpondcontroller.hpp \
+    include/game/Controller/fishactionscontroller.hpp \
+    include/game/Controller/prohibitioncontroller.hpp \
+    include/game/Controller/tabletcontroller.hpp \
+    include/game/Controller/suitkitcontroller.hpp
 
 INCLUDEPATH += include
 

@@ -1,4 +1,4 @@
-#include "game/reel.hpp"
+#include "game/Items/reel.hpp"
 
 game::r64 game::Reel::EffectiveWeight() const
 {

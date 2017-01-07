@@ -1,6 +1,17 @@
 #include "game/View/newsview.hpp"
 
-NewsView::NewsView()
+game::NewsView::NewsView(QWidget *a_Parent)
+    : QWidget(a_Parent)
+{
+
+}
+
+game::NewsView::~NewsView()
+{
+
+}
+
+void game::NewsView::Setup()
 {
 
 }

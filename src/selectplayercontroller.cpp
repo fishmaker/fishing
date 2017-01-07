@@ -1,6 +1,6 @@
 #include "game/Controller/selectplayercontroller.hpp"
 
-game::SelectPlayerController::SelectPlayerController(QWidget *a_Parent)
+game::SelectPlayerController::SelectPlayerController(QWidget *)
 {
     this->m_View = new game::SelectPlayerView();
     this->m_View->Setup();

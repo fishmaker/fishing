@@ -1,6 +1,17 @@
 #include "game/View/blackmarketview.hpp"
 
-BlackMarketView::BlackMarketView()
+game::BlackMarketView::BlackMarketView(QWidget *a_Parent)
+    : QWidget(a_Parent)
+{
+
+}
+
+game::BlackMarketView::~BlackMarketView()
+{
+
+}
+
+void game::BlackMarketView::Setup()
 {
 
 }

@@ -2,8 +2,8 @@
     <qresource prefix="/">
         <file>data/fishes.db</file>
         <file>data/items.db</file>
-        <file>data/world-want.db</file>
         <file>data/images/f10000.jpg</file>
         <file>data/images/f10001.jpg</file>
+        <file>data/world.db</file>
     </qresource>
 </RCC>

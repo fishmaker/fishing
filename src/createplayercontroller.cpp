@@ -1,7 +1,7 @@
 #include "game/Controller/createplayercontroller.hpp"
 
 
-game::CreatePlayerController::CreatePlayerController(QWidget *a_Parent)
+game::CreatePlayerController::CreatePlayerController(QWidget *)
 {
     this->m_View = new game::CreatePlayerView();
     this->m_View->Setup();

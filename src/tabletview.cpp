@@ -1,6 +1,17 @@
 #include "game/View/tabletview.hpp"
 
-TabletView::TabletView()
+game::TabletView::TabletView(QWidget *a_Parent)
+    : QWidget(a_Parent)
+{
+
+}
+
+game::TabletView::~TabletView()
+{
+
+}
+
+void game::TabletView::Setup()
 {
 
 }

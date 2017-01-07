@@ -1,4 +1,4 @@
-#include "game/ihook.hpp"
+#include "game/Interfaces/ihook.hpp"
 
 game::IHook::IHook()
 {

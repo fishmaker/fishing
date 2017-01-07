@@ -1,11 +1,23 @@
 #ifndef EVENTVIEW_H
 #define EVENTVIEW_H
 
+#include <QWidget>
 
-class EventView
+namespace game {
+
+class EventView : public QWidget
 {
+    Q_OBJECT
+
 public:
-    EventView();
+    void Setup();
+
+public:
+    explicit EventView(QWidget *a_Parent =0);
+    ~EventView();
 };
 
+} // namespace game
+
 #endif // EVENTVIEW_H
+

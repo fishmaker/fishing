@@ -1,6 +1,17 @@
 #include "game/View/fishpondview.hpp"
 
-FishpondView::FishpondView()
+game::FishpondView::FishpondView(QWidget *a_Parent)
+    : QWidget(a_Parent)
+{
+
+}
+
+game::FishpondView::~FishpondView()
+{
+
+}
+
+void game::FishpondView::Setup()
 {
 
 }
