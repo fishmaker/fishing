@@ -1,6 +1,9 @@
 #ifndef FISH_H
 #define FISH_H
 
+#include <map>
+#include <functional>
+
 #include <QtCore>
 
 #include "game/common/common.hpp"
@@ -25,30 +28,32 @@ typedef enum : i32 {
 typedef struct {
     i32 ID;
     r64 weight;
+    UString             m_PlaceName;        // названия места
+    UString             m_BaitName;         // название наживки
 } playerscatch_t;
 
 class Fish : public IBasicCatch
 {
     UString             m_Name;             // имя: Плотва
     UString             m_Description;      // описание: Питается ...
-    UString             m_PlaceName;        // названия места
-    UString             m_BaitName;         // название наживки
     QString             m_ImagePath;        // путь к картинке: ":/fishes/111.png"
     catchtype_e         m_FishType;         // размерность добычи
     fishactions_e       m_Actions;          // доступные действия
     r64                 m_MinWeight;        // минимальный вес: 1.232 - 1кг 232г
     r64                 m_MaxWeight;        // максимальный вес
     r64                 m_Price;            // стоимость за 1г
-    r64                 m_Expirience;       // сколько приносит опыта за 1г
-    i32                 m_BitingTime;       // MAX время клева (до подсечки)
-    i32                 m_FreqBite;         // MAX частота колебания поплавка (до подсечки)
-    i32                 m_PlayerReaction;   // MAX время на реакцию у игрока (до подсечки)
-    i32                 m_CatchTime;        // MAX время на вылов (после подсечки)
-    i32                 m_Frequency;        // MAX активность рыбы (после подсечки)
+    r64                 m_Expirience;       // сколько приносит опыта за 1г, TODO: value?
+    i32                 m_BitingTime;       // MAX время клева (до подсечки), ms
+    i32                 m_FreqBite;         // MAX частота колебания поплавка (до подсечки), ms
+    i32                 m_PlayerReaction;   // MAX время на реакцию у игрока (до подсечки), ms
+    i32                 m_CatchTime;        // MAX время на вылов (после подсечки), ms
+    i32                 m_Frequency;        // MAX активность рыбы (после подсечки), ms
     r64                 m_FishSpeed;        // MAX скорость рыбы (после подсечки)
-    tableDepthSize_t    m_vDepthSize;       // таблица глубина - размер
-    tableTimeActivity_t m_vTimeActivity;    // таблица время - активность
-    tableBaitCatch_t    m_vBaitCatch;       // таблица наживка - улов
+    tableDepthSize_t    m_vDepthSize;       // таблица глубина - размер(начиная от ..)
+    tableTimeActivity_t m_vTimeActivity;    // таблица время - активность(начиная от ..)
+    tableBaitCatch_t    m_vBaitCatch;       // таблица наживка - вероятность улова(начиная от ..)
+
+    std::map<std::string, std::function<void(LString&)>> m_mInitializer;
 
 public:
     explicit Fish();
@@ -59,12 +64,6 @@ public:
 
     UString Description() const;
     void setDescription(const UString &Description);
-
-    UString PlaceName() const;
-    void setPlaceName(const UString &PlaceName);
-
-    UString BaitName() const;
-    void setBaitName(const UString &BaitName);
 
     QString ImagePath() const;
     void setImagePath(const QString &ImagePath);
@@ -110,6 +109,27 @@ public:
     const tableTimeActivity_t* vTimeActivity() const;
 
     const tableBaitCatch_t* vBaitCatch() const;
+
+private:
+    void p_SetName(LString&);
+    void p_SetDescription(LString&);
+    void p_SetImage(LString&);
+    void p_SetType(LString&);
+    void p_SetActions(LString&);
+    void p_SetMinWeight(LString&);
+    void p_SetMaxWeight(LString&);
+    void p_SetPrice(LString&);
+    void p_SetExpirience(LString&);
+    void p_SetBitingTime(LString&);
+    void p_SetFreqBite(LString&);
+    void p_SetPlayerReaction(LString&);
+    void p_SetCatchTime(LString&);
+    void p_Frequency(LString&);
+    void p_SetFishSpeed(LString&);
+    void p_SetDepthSize(LString&);
+    void p_SetTimeActivity(LString&);
+    void p_SetBaitCatch(LString&);
+
 };
 
 } // namespace game

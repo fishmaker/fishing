@@ -50,11 +50,11 @@ void game::Place::p_SetBGImage(game::LString &a_Data)
 void game::Place::p_SetDepthMap(game::LString &a_Data)
 {
     i32 row, a_Depth;
+    i32 i = 0;
     std::istringstream a_SS(a_Data);
     a_SS >> row;
-    row -= 1000;
-    for (i32 i = 0; a_SS >> a_Depth; ++i) {
-        this->m_ArrayMap[row][i] = a_Depth;
+    while (a_SS >> a_Depth) {
+        this->m_ArrayMap[row][i++] = a_Depth;
     }
 }
 
