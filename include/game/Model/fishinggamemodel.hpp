@@ -46,7 +46,7 @@ public:
 private:
     Player      *m_ActivePlayer;
     activefishingset_t  m_ActiveSets[3];
-    Place       *m_CurrentPlace; // TODO: or ID?
+    Place       *m_CurrentPlace;
 };
 
 } // namespace game

@@ -103,7 +103,8 @@ SOURCES += main.cpp \
     src/fishactionscontroller.cpp \
     src/prohibitioncontroller.cpp \
     src/tabletcontroller.cpp \
-    src/suitkitcontroller.cpp
+    src/suitkitcontroller.cpp \
+    src/graphicsview.cpp
 
 HEADERS  += \
     include/game/View/welcomeview.hpp \
@@ -199,7 +200,8 @@ HEADERS  += \
     include/game/Controller/fishactionscontroller.hpp \
     include/game/Controller/prohibitioncontroller.hpp \
     include/game/Controller/tabletcontroller.hpp \
-    include/game/Controller/suitkitcontroller.hpp
+    include/game/Controller/suitkitcontroller.hpp \
+    include/game/graphicsview.hpp
 
 INCLUDEPATH += include
 

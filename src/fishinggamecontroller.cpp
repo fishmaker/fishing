@@ -14,6 +14,7 @@ game::FishingGameController::~FishingGameController()
 
 void game::FishingGameController::Startup()
 {
+    this->m_View->SetBG(QImage(":/data/images/f30001.jpg"));
     this->m_View->show();
 }
 

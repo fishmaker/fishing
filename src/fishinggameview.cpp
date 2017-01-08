@@ -32,12 +32,22 @@ void game::FishingGameView::keyReleaseEvent(QKeyEvent *a_Event)
     QWidget::keyReleaseEvent(a_Event);
 }
 
+void game::FishingGameView::SetBG(const QImage &a_BG)
+{
+    this->m_BG.setTextureImage(a_BG);
+    this->m_GameScene[0].setBackgroundBrush(this->m_BG);
+}
+
 void game::FishingGameView::Setup()
 {
     // Игровое окно
-    this->m_GViews[0].setParent(this);
-    this->m_GViews[0].setGeometry(20, 20, 800, 400);
-    // TODO: this->m_GViews[0].setScene();
+    this->m_GameScene[0].setSceneRect(0, 0, 800, 400);
+    this->m_GameScene[0].setParent(this);
+    this->m_GameView.setParent(this);
+    this->m_GameView.setGeometry(20, 20, 800, 400);
+    this->m_GameView.setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    this->m_GameView.setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    this->m_GameView.setScene(&this->m_GameScene[0]);
 
     // Эхолот
     this->m_GViews[1].setParent(this);
@@ -108,9 +118,14 @@ void game::FishingGameView::Setup()
     this->m_Labels[3].show();
 
     // Предметы
+    this->m_GameScene[1].setBackgroundBrush(QBrush(QImage(":/data/border128x192.png")));
+    this->m_GameScene[1].setSceneRect(0, 0, 128, 192);
+    this->m_GameScene[1].setParent(this);
     this->m_GViews[2].setParent(this);
     this->m_GViews[2].setGeometry(850, 240, 128, 192);
-    // TODO: this->m_GViews[2].setScene();
+    this->m_GViews[2].setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    this->m_GViews[2].setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    this->m_GViews[2].setScene(&this->m_GameScene[1]);
 
     // 1
     this->m_Buttons[0].setGeometry(870, 440, 21, 23);

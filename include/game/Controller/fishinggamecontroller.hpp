@@ -22,11 +22,8 @@ public:
     void Startup();
     void Endup();
 
-
-
 private:
     QTimer  m_Timer;        // Таймер клавиатуры
-
     FishingGameView     *m_View;
     FishingGameModel    *m_Model;
 };

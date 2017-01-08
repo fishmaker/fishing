@@ -5,5 +5,7 @@
         <file>data/images/f10000.jpg</file>
         <file>data/images/f10001.jpg</file>
         <file>data/world.db</file>
+        <file>data/border64.png</file>
+        <file>data/border128x192.png</file>
     </qresource>
 </RCC>
